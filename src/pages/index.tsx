@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex justify-end" /*Toggle on the right*/>
                 <Theme />
             </div>
-            <section className="flex justify-center" /*Summary in grid 2-6*/>
+            <div className="flex justify-center">
                 <Summary
                     image={bio?.image}
                     name={bio?.name}
@@ -58,8 +58,10 @@ export default function Home() {
                     activeTab={openTab}
                     tabContent={tabContent}
                 />
-            </section>
-            <div className="divider"></div>
+            </div>
+            <div className="flex justify-center">
+                content
+            </div>
         </>
     );
 }

@@ -42,7 +42,7 @@ export default function Summary({
     tabContent,
 }: SummaryProps) {
     return (
-        <div className="card-normal bg-base-100 shadow-2xl w-1/2 justify-center hover:bg-gradient-to-r">
+        <div className="card-normal w-1/2 bg-base-300 rounded-box justify-center">
             <div className="flex flex-col" /*To help stack summary items */>
                 <div
                     className="flex flex-row gap-8 justify-center" /*Highlights*/
@@ -54,6 +54,7 @@ export default function Summary({
                                 alt={name!}
                                 width={250}
                                 height={500}
+                                className="pr-4"
                             />
                         </div>
                         <div className="gap-16" /*Link*/>
@@ -61,17 +62,19 @@ export default function Summary({
                         </div>
                     </div>
                     <div
-                        className="flex flex-col font-serif" /*String details */
+                        className="flex flex-col font-serif p-2" /*String details */
                     >
-                        <span className="font-bold text-2xl">{name}</span>
-                        <span className="italic">{title}</span>
-                        <span>{portfolioPurpose}</span>
+                        <span className="font-bold text-5xl p-2">{name}</span>
+                        <span className="italic p-2">{title}</span>
+                        <span className="p-2">{portfolioPurpose}</span>
                     </div>
                 </div>
-                <span className="font-serif justify-center text-center">
+                <span className="font-serif justify-center text-center p-4">
                     {tldr}
                 </span>
-                <div className="tabs tabs-boxed justify-center" /*Tabs */>
+                <div
+                    className="tabs bg-base-300 tabs-boxed justify-center" /*Tabs */
+                >
                     <a
                         className={activeTab === 0 ? "tab tab-active" : "tab"}
                         onClick={() => switchTags(0)}
@@ -91,7 +94,7 @@ export default function Summary({
                         Things I can improve on
                     </a>
                 </div>
-                <p className="flex">{tabContent}</p>
+                <p className="p-8">{tabContent}</p>
             </div>
         </div>
     );
