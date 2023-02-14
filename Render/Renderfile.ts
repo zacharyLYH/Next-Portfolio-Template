@@ -9,6 +9,19 @@ export const Render = [
         aboutMe: "My about me",
         standOut: "My standOut",
         weakness: "My weakness",
-        image: "/vercel.svg"
-    }
+        image: "/vercel.svg",
+    },
+    {
+        type: "Experience",
+        title: "swe1",
+        summary: "learned a lot",
+        skills: ["golang", "nodejs"],
+        story: "dasonfds",
+        links: [
+            {
+                type: "sample",
+                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
+            },
+        ],
+    },
 ];
