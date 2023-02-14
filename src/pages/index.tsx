@@ -3,15 +3,33 @@ import Summary from "components/summary";
 import { useState } from "react";
 import Theme from "components/theme";
 import { Render } from "Render/Renderfile";
-import { Convert, Bio } from "./../../Render/Bio/RenderBio";
+import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
+import {
+    ConvertExp,
+    Experience,
+} from "./../../Render/Experience/RenderExperience";
+import ExperienceComponent from "components/experience";
 
 export default function Home() {
     const [openTab, setOpenTab] = useState(1);
     const [bio, setBio] = useState<Bio | null>(null);
+    const [exps, setExp] = useState<Experience[]>([]);
+    const [skills, setSkills] = useState<String[]>([]);
     const readRenderfile = () => {
         for (const docs of Render) {
             if (docs.type === "Bio") {
-                setBio(Convert.toBio(JSON.stringify(docs)));
+                setBio(ConvertBio.toBio(JSON.stringify(docs)));
+            }
+            if (docs.type === "Experience") {
+                setExp((prevExp) => [
+                    ...prevExp,
+                    ConvertExp.toExperience(JSON.stringify(docs)),
+                ]);
+                for (const skill of docs.skills!) {
+                    if (!skills.includes(skill)) {
+                        setSkills((allSkills) => [...allSkills, skill]);
+                    }
+                }
             }
         }
     };
@@ -46,7 +64,7 @@ export default function Home() {
             <div className="flex justify-end" /*Toggle on the right*/>
                 <Theme />
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center p-2">
                 <Summary
                     bio={bio!}
                     switchTags={handleClickedTab}
@@ -54,7 +72,14 @@ export default function Home() {
                     tabContent={tabContent}
                 />
             </div>
-            <div className="flex justify-center">content</div>
+            <div className="flex font-bold justify-center">Experiences</div>
+            <div className="flex justify-center p-2">
+                <div className="w-1/2 bg-base-300 shadow-2xl rounded-box justify-center">
+                    {exps.map((exp) => (
+                        <ExperienceComponent key={exp.summary}exp={exp} />
+                    ))}
+                </div>
+            </div>
         </>
     );
 }
