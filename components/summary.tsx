@@ -17,7 +17,7 @@ const unpackLinks = (link: string) => {
     for (const entries of Array.from(map)) {
         if (link.includes(entries[0])) {
             return (
-                <a href={link}>
+                <a href={link} key={i}>
                     <FontAwesomeIcon icon={entries[1]} className="p-2 fa-2x" />
                 </a>
             );
@@ -33,8 +33,8 @@ export default function Summary({
     tabContent,
 }: SummaryProps) {
     return (
-        <div className="card-normal w-1/2 bg-base-300 rounded-box justify-center">
-            <div className="flex flex-col" /*To help stack summary items */>
+        <div className="w-1/2 bg-base-300 shadow-2xl rounded-box justify-center">
+            <div className="flex flex-col" /*All Summary items */>
                 <div
                     className="flex flex-row gap-8 justify-center" /*Highlights*/
                 >
@@ -46,6 +46,7 @@ export default function Summary({
                                 width={250}
                                 height={500}
                                 className="pr-4"
+                                priority={true}
                             />
                         </div>
                         <div className="gap-16" /*Link*/>
