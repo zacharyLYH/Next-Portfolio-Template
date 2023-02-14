@@ -48,20 +48,13 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
                 <Summary
-                    image={bio?.image}
-                    name={bio?.name}
-                    title={bio?.title}
-                    portfolioPurpose={bio?.portfolioPurpose}
-                    socialLinks={bio?.socialLinks}
-                    tldr={bio?.tldr}
+                    bio={bio!}
                     switchTags={handleClickedTab}
                     activeTab={openTab}
                     tabContent={tabContent}
                 />
             </div>
-            <div className="flex justify-center">
-                content
-            </div>
+            <div className="flex justify-center">content</div>
         </>
     );
 }
