@@ -22,7 +22,7 @@ export interface Bio {
 
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
-export class Convert {
+export class ConvertBio {
     public static toBio(json: string): Bio {
         return cast(JSON.parse(json), r("Bio"));
     }
