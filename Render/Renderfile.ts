@@ -24,4 +24,17 @@ export const Render = [
             },
         ],
     },
+    // {
+    //     type: "Experience",
+    //     title: "swe2",
+    //     summary: "learned a lot2",
+    //     skills: ["golang", "nodejs"],
+    //     story: "dasonfd2s",
+    //     links: [
+    //         {
+    //             type: "sample",
+    //             link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
+    //         },
+    //     ],
+    // },
 ];

@@ -74,9 +74,19 @@ export default function Home() {
             </div>
             <div className="flex font-bold justify-center">Experiences</div>
             <div className="flex justify-center p-2">
-                <div className="w-1/2 bg-base-300 shadow-2xl rounded-box justify-center">
-                    {exps.map((exp) => (
-                        <ExperienceComponent key={exp.summary}exp={exp} />
+                <div className="carousel w-1/2 bg-base-300 shadow-2xl rounded-box justify-center overflow-hidden">
+                    {exps.map((exp, index) => (
+                        <div
+                            id={index.toString()}
+                            className="carousel-item relative w-1/2"
+                        >
+                            <ExperienceComponent
+                                key={index}
+                                exp={exp}
+                                total={exps.length - 1}
+                                idx={index}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
