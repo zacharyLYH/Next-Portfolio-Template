@@ -10,7 +10,7 @@ export interface SummaryProps {
     tabContent?: string;
 }
 
-const map = new Map<string, IconDefinition>([["github", faGithub]]);
+const map = new Map<string, IconDefinition>([["github.com", faGithub]]);
 
 const unpackLinks = (link: string) => {
     var i = 0;
