@@ -15,9 +15,8 @@ export interface Bio {
     socialLinks:      string[];
     tldr:             string;
     aboutMe:          string;
-    standOut:         string;
-    weakness:         string;
     image:            string;
+    hobbies:          string[];
 }
 
 // Converts JSON strings to/from your types
@@ -193,8 +192,7 @@ const typeMap: any = {
         { json: "socialLinks", js: "socialLinks", typ: a("") },
         { json: "tldr", js: "tldr", typ: "" },
         { json: "aboutMe", js: "aboutMe", typ: "" },
-        { json: "standOut", js: "standOut", typ: "" },
-        { json: "weakness", js: "weakness", typ: "" },
         { json: "image", js: "image", typ: "" },
+        { json: "hobbies", js: "hobbies", typ: a("") },
     ], false),
 };

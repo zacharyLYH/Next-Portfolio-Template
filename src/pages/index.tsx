@@ -1,17 +1,19 @@
 import Head from "next/head";
-import Summary from "components/summary";
 import { useState } from "react";
 import Theme from "components/theme";
 import { Render } from "Render/Renderfile";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
 import {
     ConvertExp,
     Experience,
 } from "./../../Render/Experience/RenderExperience";
+import HeroComponent from "components/hero";
+import AboutMeComponent from "components/aboutMe";
 import ExperienceComponent from "components/experience";
 
 export default function Home() {
-    const [openTab, setOpenTab] = useState(1);
     const [bio, setBio] = useState<Bio | null>(null);
     const [exps, setExp] = useState<Experience[]>([]);
     const [skills, setSkills] = useState<String[]>([]);
@@ -33,22 +35,26 @@ export default function Home() {
             }
         }
     };
+    const map = new Map<string, IconDefinition>([["github", faGithub]]);
+    const unpackLinks = (link: string) => {
+        var i = 0;
+        for (const entries of Array.from(map)) {
+            if (link.includes(entries[0])) {
+                return (
+                    <a href={link} key={i}>
+                        <FontAwesomeIcon
+                            icon={entries[1]}
+                            className="p-2 fa-2x"
+                        />
+                    </a>
+                );
+            }
+            i++;
+        }
+    };
     if (bio === null) {
         readRenderfile();
     }
-    const [tabContent, setTabContent] = useState(bio?.standOut);
-    const handleClickedTab = (clicked: number) => {
-        setOpenTab(clicked);
-        if (clicked == 0) {
-            setTabContent(bio?.aboutMe);
-        }
-        if (clicked == 1) {
-            setTabContent(bio?.standOut);
-        }
-        if (clicked == 2) {
-            setTabContent(bio?.weakness);
-        }
-    };
     const title = `${bio!?.name + "'s Portfolio"}`;
     return (
         <>
@@ -61,33 +67,18 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="flex justify-end" /*Toggle on the right*/>
-                <Theme />
-            </div>
-            <div className="flex justify-center p-2">
-                <Summary
-                    bio={bio!}
-                    switchTags={handleClickedTab}
-                    activeTab={openTab}
-                    tabContent={tabContent}
-                />
-            </div>
-            <div className="flex font-bold justify-center">Experiences</div>
-            <div className="flex justify-center p-2">
-                <div className="carousel w-1/2 bg-base-300 shadow-2xl rounded-box justify-center overflow-hidden">
-                    {exps.map((exp, index) => (
-                        <div
-                            id={index.toString()}
-                            className="carousel-item relative w-1/2"
-                        >
-                            <ExperienceComponent
-                                key={index}
-                                exp={exp}
-                                total={exps.length - 1}
-                                idx={index}
-                            />
-                        </div>
-                    ))}
+            <div className="grid grid-cols-8">
+                <div className="col-start-2 col-end-8">
+                    <Theme />
+                    <section>
+                        <HeroComponent bio={bio!} />
+                    </section>
+                    <section>
+                        <AboutMeComponent bio={bio!} />
+                    </section>
+                    <section>
+                        <ExperienceComponent exp={exps!} />
+                    </section>
                 </div>
             </div>
         </>
