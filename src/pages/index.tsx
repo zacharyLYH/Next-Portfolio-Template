@@ -9,14 +9,16 @@ import {
     ConvertExperience,
     Experience,
 } from "./../../Render/Experience/RenderExperience";
+import { ConvertProjects, Projects } from "Render/Project/RenderProject";
 import HeroComponent from "components/hero";
 import AboutMeComponent from "components/aboutMe";
-import ExperienceComponent from "components/experience";
+import ProjectComponent from "components/project";
 
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
     const [exps, setExp] = useState<Experience[]>([]);
     const [skills, setSkills] = useState<String[]>([]);
+    const [project, setProject] = useState<Projects[]>([]);
     const readRenderfile = () => {
         for (const docs of Render) {
             if (docs.type === "Bio") {
@@ -32,6 +34,12 @@ export default function Home() {
                         setSkills((allSkills) => [...allSkills, skill]);
                     }
                 }
+            }
+            if(docs.type === "Project") {
+                setProject((prevProj) => [
+                    ...prevProj,
+                    ConvertProjects.toProjects(JSON.stringify(docs)),
+                ])
             }
         }
     };
@@ -75,7 +83,7 @@ export default function Home() {
                 <AboutMeComponent bio={bio!} />
             </section>
             <section>
-                <ExperienceComponent exp={exps!} />
+                <ProjectComponent proj={project!} />
             </section>
         </>
     );

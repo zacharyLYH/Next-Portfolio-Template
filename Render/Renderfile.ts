@@ -11,83 +11,55 @@ export const Render = [
         hobbies: ["cooking", "games"]
     },
     {
-        type: "Experience",
-        title: "swe1",
+        type: "Project",
+        name: "swe1",
         summary: "learned a lot",
         skills: ["golang", "nodejs"],
         story: "dasonfds",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
-        orgName: "UB",
-        current: true
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        featured: true,
+        dateStartToEnd: "1/1 - 2/1"
     },
     {
-        type: "Experience",
-        title: "swe2",
+        type: "Project",
+        name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
         story: "dasonfd2sss",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        featured: true
     },
     {
-        type: "Experience",
-        title: "swe2",
+        type: "Project",
+        name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
         story: "dasonfd2ers",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
     },
     {
-        type: "Experience",
-        title: "swe2",
+        type: "Project",
+        name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
         story: "dasonwerfd2s",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
     },
     {
-        type: "Experience",
-        title: "swe2",
+        type: "Project",
+        name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
         story: "dasongnfd2s",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
     },
     {
-        type: "Experience",
-        title: "swe2",
+        type: "Project",
+        name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
         story: "dasoxxnfd2s",
-        links: [
-            {
-                type: "sample",
-                link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
-            },
-        ],
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
     },
 ];

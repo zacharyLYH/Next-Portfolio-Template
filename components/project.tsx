@@ -1,26 +1,31 @@
-import { Experience } from "Render/Experience/RenderExperience";
+import { Projects } from "Render/Project/RenderProject";
 import unpackLinks from "utilities/links";
 
-export interface ExperienceProps {
-    exp: Experience[];
+export interface ProjectProps {
+    proj: Projects[];
 }
 
-export default function ExperienceComponent({ exp }: ExperienceProps) {
+export default function ProjectComponent({ proj }: ProjectProps) {
     return (
         <>
             <div className="font-bold text-center text-2xl font-serif">
-                Experience
+                Projects
             </div>
             <div className="flex flex-wrap items-center justify-center mx-56">
-                {exp.map((e) => (
+                {proj.map((e) => (
                     <div key={e.story} className="basis-1/3 flex-none ">
                         <div className=" card shadow-2xl ">
                             <div className="card-body">
                                 <h2 className="card-title p-2 font-bold">
-                                    {e.title} @ {e.orgName}
+                                    {e.name}
                                     {e.current ? (
                                         <div className="badge badge-secondary">
                                             Current
+                                        </div>
+                                    ) : null}
+                                    {e.featured ? (
+                                        <div className="badge badge-secondary">
+                                            Featured
                                         </div>
                                     ) : null}
                                 </h2>
@@ -64,12 +69,7 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                                 data-tip="Related links"
                                             >
                                                 {e.links!.map((link) => (
-                                                    <span>
-                                                        {link.type}{" "}
-                                                        {unpackLinks(
-                                                            link.link!
-                                                        )}
-                                                    </span>
+                                                    unpackLinks(link)
                                                 ))}
                                             </div>
                                         </label>
