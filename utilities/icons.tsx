@@ -1,9 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faGolang, IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import {
+    faGithub,
+    faGolang,
+    faNodeJs,
+    IconDefinition,
+} from "@fortawesome/free-brands-svg-icons";
 
 const map = new Map<string, IconDefinition>([
     ["github", faGithub],
     ["golang", faGolang],
+    ["nodejs", faNodeJs],
 ]);
 
 export default function unpackIcons(link: string) {

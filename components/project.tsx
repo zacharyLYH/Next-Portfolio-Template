@@ -12,7 +12,7 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                 Projects
             </span>
             <div className="flex flex-wrap items-center justify-center mx-56">
-                {proj.map((e,index) => (
+                {proj.map((e, index) => (
                     <div key={e.story} className="basis-1/3 flex-none ">
                         <div className=" card shadow-2xl ">
                             <div className="card-body">
@@ -62,15 +62,21 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                                             className="modal-box relative"
                                             htmlFor=""
                                         >
+                                            <span className="font-bold">
+                                                Story:{" "}
+                                            </span>
                                             <p className="py-4">{e.story}</p>
-                                            <div
+                                            <span className="font-bold">
+                                                Check them out:{" "}
+                                            </span>
+                                            <p
                                                 className="gap-16 tooltip"
                                                 data-tip="Related links"
                                             >
                                                 {e.links!.map((link) =>
                                                     unpackIcons(link)
                                                 )}
-                                            </div>
+                                            </p>
                                         </label>
                                     </label>
                                 </div>
