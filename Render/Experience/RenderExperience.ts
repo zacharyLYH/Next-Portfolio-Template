@@ -8,22 +8,24 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface Experience {
-    type:    string;
-    title:   string;
-    summary: string;
-    skills:  string[];
-    story:   string;
-    links:   Link[];
+    type?:    string;
+    title?:   string;
+    summary?: string;
+    skills?:  string[];
+    story?:   string;
+    links?:   Link[];
+    current?: boolean;
+    orgName?: string;
 }
 
 export interface Link {
-    type: string;
-    link: string;
+    type?: string;
+    link?: string;
 }
 
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
-export class ConvertExp {
+export class ConvertExperience {
     public static toExperience(json: string): Experience {
         return cast(JSON.parse(json), r("Experience"));
     }
@@ -187,15 +189,17 @@ function r(name: string) {
 
 const typeMap: any = {
     "Experience": o([
-        { json: "type", js: "type", typ: "" },
-        { json: "title", js: "title", typ: "" },
-        { json: "summary", js: "summary", typ: "" },
-        { json: "skills", js: "skills", typ: a("") },
-        { json: "story", js: "story", typ: "" },
-        { json: "links", js: "links", typ: a(r("Link")) },
+        { json: "type", js: "type", typ: u(undefined, "") },
+        { json: "title", js: "title", typ: u(undefined, "") },
+        { json: "summary", js: "summary", typ: u(undefined, "") },
+        { json: "skills", js: "skills", typ: u(undefined, a("")) },
+        { json: "story", js: "story", typ: u(undefined, "") },
+        { json: "links", js: "links", typ: u(undefined, a(r("Link"))) },
+        { json: "current", js: "current", typ: u(undefined, true) },
+        { json: "orgName", js: "orgName", typ: u(undefined, "") },
     ], false),
     "Link": o([
-        { json: "type", js: "type", typ: "" },
-        { json: "link", js: "link", typ: "" },
+        { json: "type", js: "type", typ: u(undefined, "") },
+        { json: "link", js: "link", typ: u(undefined, "") },
     ], false),
 };

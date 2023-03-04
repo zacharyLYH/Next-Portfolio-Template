@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
 import {
-    ConvertExp,
+    ConvertExperience,
     Experience,
 } from "./../../Render/Experience/RenderExperience";
 import HeroComponent from "components/hero";
@@ -25,7 +25,7 @@ export default function Home() {
             if (docs.type === "Experience") {
                 setExp((prevExp) => [
                     ...prevExp,
-                    ConvertExp.toExperience(JSON.stringify(docs)),
+                    ConvertExperience.toExperience(JSON.stringify(docs)),
                 ]);
                 for (const skill of docs.skills!) {
                     if (!skills.includes(skill)) {

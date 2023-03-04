@@ -22,13 +22,15 @@ export const Render = [
                 link: "https://github.com/cse442-at-ub/project_s23-p-np/tree/dev",
             },
         ],
+        orgName: "UB",
+        current: true
     },
     {
         type: "Experience",
         title: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2s",
+        story: "dasonfd2sss",
         links: [
             {
                 type: "sample",
@@ -41,7 +43,7 @@ export const Render = [
         title: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2s",
+        story: "dasonfd2ers",
         links: [
             {
                 type: "sample",
@@ -54,7 +56,7 @@ export const Render = [
         title: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2s",
+        story: "dasonwerfd2s",
         links: [
             {
                 type: "sample",
@@ -67,7 +69,7 @@ export const Render = [
         title: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2s",
+        story: "dasongnfd2s",
         links: [
             {
                 type: "sample",
@@ -80,7 +82,7 @@ export const Render = [
         title: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2s",
+        story: "dasoxxnfd2s",
         links: [
             {
                 type: "sample",

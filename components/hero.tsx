@@ -15,6 +15,7 @@ export default function HeroComponent({ bio }: HeroProps) {
                     alt={bio.name}
                     width={500}
                     height={500}
+                    priority={true}
                 />
                 <div>
                     <span className="text-xl p-2">Hi, my name is</span>
