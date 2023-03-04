@@ -1,5 +1,5 @@
 import { Projects } from "Render/Project/RenderProject";
-import unpackLinks from "utilities/links";
+import unpackIcons from "utilities/icons";
 
 export interface ProjectProps {
     proj: Projects[];
@@ -7,10 +7,10 @@ export interface ProjectProps {
 
 export default function ProjectComponent({ proj }: ProjectProps) {
     return (
-        <>
-            <div className="font-bold text-center text-2xl font-serif">
+        <div className="flex flex-col h-screen items-center">
+            <span className="font-bold text-center text-2xl font-serif ">
                 Projects
-            </div>
+            </span>
             <div className="flex flex-wrap items-center justify-center mx-56">
                 {proj.map((e) => (
                     <div key={e.story} className="basis-1/3 flex-none ">
@@ -38,11 +38,10 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                                         data-tip="Skills involved"
                                     >
                                         {e.skills!.map((skill) =>
-                                            unpackLinks(skill)
+                                            unpackIcons(skill)
                                         )}
                                     </span>
                                 </div>
-
                                 <div className="card-actions justify-end">
                                     <label
                                         htmlFor="my-modal-4"
@@ -68,9 +67,9 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                                                 className="gap-16 tooltip"
                                                 data-tip="Related links"
                                             >
-                                                {e.links!.map((link) => (
-                                                    unpackLinks(link)
-                                                ))}
+                                                {e.links!.map((link) =>
+                                                    unpackIcons(link)
+                                                )}
                                             </div>
                                         </label>
                                     </label>
@@ -80,6 +79,6 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }

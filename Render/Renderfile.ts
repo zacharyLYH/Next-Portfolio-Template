@@ -71,6 +71,7 @@ export const Render = [
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         current: true,
         orgName: "hello",
+        dateStartEnd:"1/1-2/1"
     },
     {
         type: "Experience",
@@ -79,7 +80,6 @@ export const Render = [
         skills: ["golang", "nodejs"],
         story: "dasoxxnfd2s",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        current: true,
         orgName: "hello",
     },
     {
@@ -101,5 +101,16 @@ export const Render = [
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         current: true,
         orgName: "hello",
+    },
+    {
+        type: "Experience",
+        title: "swe2",
+        summary: "experience summaryss",
+        skills: ["golang", "nodejs"],
+        story: "dasoxxnfd2s",
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        orgName: "hello",
+        dateStartEnd:"1/1-2/1"
     },
 ];

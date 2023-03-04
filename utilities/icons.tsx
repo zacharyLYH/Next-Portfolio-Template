@@ -6,7 +6,7 @@ const map = new Map<string, IconDefinition>([
     ["golang", faGolang],
 ]);
 
-export default function unpackLinks(link: string) {
+export default function unpackIcons(link: string) {
     var i = 0;
     for (const entries of Array.from(map)) {
         if (link.includes(entries[0])) {
