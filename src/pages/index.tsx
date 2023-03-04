@@ -13,6 +13,7 @@ import { ConvertProjects, Projects } from "Render/Project/RenderProject";
 import HeroComponent from "components/hero";
 import AboutMeComponent from "components/aboutMe";
 import ProjectComponent from "components/project";
+import ExperienceComponent from "components/experience";
 
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
@@ -81,6 +82,9 @@ export default function Home() {
             </section>
             <section>
                 <AboutMeComponent bio={bio!} />
+            </section>
+            <section>
+                <ExperienceComponent exp={exps!}/>
             </section>
             <section>
                 <ProjectComponent proj={project!} />

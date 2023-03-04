@@ -8,19 +8,15 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface Experience {
-    type?:    string;
-    title?:   string;
-    summary?: string;
-    skills?:  string[];
-    story?:   string;
-    links?:   Link[];
-    current?: boolean;
-    orgName?: string;
-}
-
-export interface Link {
-    type?: string;
-    link?: string;
+    type?:         string;
+    title?:        string;
+    summary?:      string;
+    skills?:       string[];
+    story?:        string;
+    links?:        string[];
+    current?:      boolean;
+    orgName?:      string;
+    dateStartEnd?: string;
 }
 
 // Converts JSON strings to/from your types
@@ -194,12 +190,9 @@ const typeMap: any = {
         { json: "summary", js: "summary", typ: u(undefined, "") },
         { json: "skills", js: "skills", typ: u(undefined, a("")) },
         { json: "story", js: "story", typ: u(undefined, "") },
-        { json: "links", js: "links", typ: u(undefined, a(r("Link"))) },
+        { json: "links", js: "links", typ: u(undefined, a("")) },
         { json: "current", js: "current", typ: u(undefined, true) },
         { json: "orgName", js: "orgName", typ: u(undefined, "") },
-    ], false),
-    "Link": o([
-        { json: "type", js: "type", typ: u(undefined, "") },
-        { json: "link", js: "link", typ: u(undefined, "") },
+        { json: "dateStartEnd", js: "dateStartEnd", typ: u(undefined, "") },
     ], false),
 };

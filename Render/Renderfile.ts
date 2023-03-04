@@ -8,7 +8,7 @@ export const Render = [
         tldr: "My tldr",
         aboutMe: "My about me",
         image: "/vercel.svg",
-        hobbies: ["cooking", "games"]
+        hobbies: ["cooking", "games"],
     },
     {
         type: "Project",
@@ -19,7 +19,7 @@ export const Render = [
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         current: true,
         featured: true,
-        dateStartToEnd: "1/1 - 2/1"
+        dateStartToEnd: "1/1 - 2/1",
     },
     {
         type: "Project",
@@ -28,7 +28,7 @@ export const Render = [
         skills: ["golang", "nodejs"],
         story: "dasonfd2sss",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true
+        featured: true,
     },
     {
         type: "Project",
@@ -61,5 +61,45 @@ export const Render = [
         skills: ["golang", "nodejs"],
         story: "dasoxxnfd2s",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+    },
+    {
+        type: "Experience",
+        title: "swe2",
+        summary: "experience summary",
+        skills: ["golang", "nodejs"],
+        story: "dasoxxnfd2s",
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        orgName: "hello",
+    },
+    {
+        type: "Experience",
+        title: "swe2",
+        summary: "experience summarysdf",
+        skills: ["golang", "nodejs"],
+        story: "dasoxxnfd2s",
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        orgName: "hello",
+    },
+    {
+        type: "Experience",
+        title: "swe2",
+        summary: "experience summaryere",
+        skills: ["golang", "nodejs"],
+        story: "dasoxxnfd2s",
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        orgName: "hello",
+    },
+    {
+        type: "Experience",
+        title: "swe2",
+        summary: "experience summary123",
+        skills: ["golang", "nodejs"],
+        story: "dasoxxnfd2s",
+        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        current: true,
+        orgName: "hello",
     },
 ];
