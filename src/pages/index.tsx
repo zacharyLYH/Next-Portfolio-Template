@@ -67,20 +67,16 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="grid grid-cols-8">
-                <div className="col-start-2 col-end-8">
-                    <Theme />
-                    <section>
-                        <HeroComponent bio={bio!} />
-                    </section>
-                    <section>
-                        <AboutMeComponent bio={bio!} />
-                    </section>
-                    <section>
-                        <ExperienceComponent exp={exps!} />
-                    </section>
-                </div>
-            </div>
+            <Theme />
+            <section>
+                <HeroComponent bio={bio!} />
+            </section>
+            <section>
+                <AboutMeComponent bio={bio!} />
+            </section>
+            <section>
+                <ExperienceComponent exp={exps!} />
+            </section>
         </>
     );
 }
