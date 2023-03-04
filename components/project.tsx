@@ -12,7 +12,7 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                 Projects
             </span>
             <div className="flex flex-wrap items-center justify-center mx-56">
-                {proj.map((e) => (
+                {proj.map((e,index) => (
                     <div key={e.story} className="basis-1/3 flex-none ">
                         <div className=" card shadow-2xl ">
                             <div className="card-body">
@@ -44,18 +44,18 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                                 </div>
                                 <div className="card-actions justify-end">
                                     <label
-                                        htmlFor="my-modal-4"
+                                        htmlFor={`proj-modal-${index}`}
                                         className="btn btn-primary"
                                     >
                                         Read More
                                     </label>
                                     <input
                                         type="checkbox"
-                                        id="my-modal-4"
+                                        id={`proj-modal-${index}`}
                                         className="modal-toggle"
                                     />
                                     <label
-                                        htmlFor="my-modal-4"
+                                        htmlFor={`proj-modal-${index}`}
                                         className="modal cursor-pointer"
                                     >
                                         <label

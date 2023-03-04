@@ -2,8 +2,6 @@ import Head from "next/head";
 import { useState } from "react";
 import Theme from "components/theme";
 import { Render } from "Render/Renderfile";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
 import {
     ConvertExperience,
@@ -36,29 +34,12 @@ export default function Home() {
                     }
                 }
             }
-            if(docs.type === "Project") {
+            if (docs.type === "Project") {
                 setProject((prevProj) => [
                     ...prevProj,
                     ConvertProjects.toProjects(JSON.stringify(docs)),
-                ])
+                ]);
             }
-        }
-    };
-    const map = new Map<string, IconDefinition>([["github", faGithub]]);
-    const unpackLinks = (link: string) => {
-        var i = 0;
-        for (const entries of Array.from(map)) {
-            if (link.includes(entries[0])) {
-                return (
-                    <a href={link} key={i}>
-                        <FontAwesomeIcon
-                            icon={entries[1]}
-                            className="p-2 fa-2x"
-                        />
-                    </a>
-                );
-            }
-            i++;
         }
     };
     if (bio === null) {

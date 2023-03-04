@@ -10,13 +10,13 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
         <div className="flex flex-row h-screen items-center justify-center lg:mx-96 md:mx-auto overflow-y-auto">
             <h1 className="text-2xl font-bold font-serif ">Experience</h1>
             <ul className="steps steps-vertical">
-                {exp.map((experience) => (
+                {exp.map((experience, index) => (
                     <li
                         key={experience.summary}
                         className="step step-warning italic text-xl font-bold px-4"
                     >
                         <label
-                            htmlFor="my-modal-3"
+                            htmlFor={`exp-modal-${index}`}
                             className="tooltip tooltip-bottom"
                             data-tip={`See more of ${experience.title}`}
                         >
@@ -42,15 +42,18 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                         </label>
                         <input
                             type="checkbox"
-                            id="my-modal-3"
+                            id={`exp-modal-${index}`}
                             className="modal-toggle"
                         />
                         <label
-                            htmlFor="my-modal-3"
+                            htmlFor={`exp-modal-${index}`}
                             className="modal cursor-pointer"
                         >
                             <label className="modal-box relative" htmlFor="">
-                                hi
+                                <span>Skills involved<br></br></span>
+                                <span>{experience.skills?.map((skill) => unpackIcons(skill))}</span>
+                                <p className="py-4 text-base">{experience.story}</p>
+
                             </label>
                         </label>
                     </li>
