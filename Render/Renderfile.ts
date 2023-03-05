@@ -4,7 +4,10 @@ export const Render = [
         name: "Zachary Lee",
         title: "SWE",
         portfolioPurpose: "Fun",
-        socialLinks: ["https://github.com/zacharyLYH"],
+        socialLinks: [
+            "https://github.com/zacharyLYH",
+            "www.linkedin.com/in/zacharyleeyh",
+        ],
         tldr: "My tldr",
         aboutMe: "My about me",
         image: "/vercel.svg",
@@ -26,7 +29,7 @@ export const Render = [
         name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2sss",
+        story: "dasonsssfd2sss",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         featured: true,
     },
@@ -35,8 +38,9 @@ export const Render = [
         name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasonfd2ers",
+        story: "dasonssnnnnsfd2sss",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        featured: true,
     },
     {
         type: "Project",
@@ -59,7 +63,7 @@ export const Render = [
         name: "swe2",
         summary: "learned a lot2",
         skills: ["golang", "nodejs"],
-        story: "dasoxxnfd2s",
+        story: "dasoxxnfsdfd2s",
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
     },
     {
@@ -71,7 +75,7 @@ export const Render = [
         links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         current: true,
         orgName: "hello",
-        dateStartEnd:"1/1-2/1"
+        dateStartEnd: "1/1-2/1",
     },
     {
         type: "Experience",
@@ -95,10 +99,8 @@ export const Render = [
     {
         type: "Footer",
         author: "John Smith",
-        links: [
-            "https://github.com/zacharyLYH"
-        ]
-    }
+        links: ["https://github.com/zacharyLYH"],
+    },
     // {
     //     type: "Experience",
     //     title: "swe2",
