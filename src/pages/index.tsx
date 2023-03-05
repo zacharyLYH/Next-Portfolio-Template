@@ -14,6 +14,7 @@ import AboutMeComponent from "components/aboutMe";
 import ProjectComponent from "components/project";
 import ExperienceComponent from "components/experience";
 import FooterComponent from "components/footer";
+import SideBarComponent from "components/sidebar";
 
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
@@ -63,9 +64,12 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Theme />
+            {/* <Theme /> */}
             <section>
                 <HeroComponent bio={bio!} />
+            </section>
+            <section>
+                <SideBarComponent links={bio!} />
             </section>
             <section>
                 <AboutMeComponent bio={bio!} />
@@ -79,6 +83,7 @@ export default function Home() {
             <section>
                 <FooterComponent foot={footer!} />
             </section>
+            
         </>
     );
 }

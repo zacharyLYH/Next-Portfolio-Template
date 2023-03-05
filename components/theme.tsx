@@ -9,7 +9,7 @@ export default function Theme() {
         document.querySelector("html")!.setAttribute("data-theme", theme);
     }, [theme]);
     return (
-        <label className="swap swap-rotate justify-end mx-10">
+        <label className="swap swap-rotate justify-end">
             <input type="checkbox" onClick={toggleTheme} />
             <svg
                 className="swap-off fill-current w-10 h-10"
