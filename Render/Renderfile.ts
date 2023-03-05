@@ -92,6 +92,13 @@ export const Render = [
         current: true,
         orgName: "hello",
     },
+    {
+        type: "Footer",
+        author: "John Smith",
+        links: [
+            "https://github.com/zacharyLYH"
+        ]
+    }
     // {
     //     type: "Experience",
     //     title: "swe2",

@@ -8,16 +8,19 @@ import {
     Experience,
 } from "./../../Render/Experience/RenderExperience";
 import { ConvertProjects, Projects } from "Render/Project/RenderProject";
+import { ConvertFooter, Footer } from "Render/Footer/RenderFooter";
 import HeroComponent from "components/hero";
 import AboutMeComponent from "components/aboutMe";
 import ProjectComponent from "components/project";
 import ExperienceComponent from "components/experience";
+import FooterComponent from "components/footer";
 
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
     const [exps, setExp] = useState<Experience[]>([]);
     const [skills, setSkills] = useState<String[]>([]);
     const [project, setProject] = useState<Projects[]>([]);
+    const [footer, setFooter] = useState<Footer | null>(null);
     const readRenderfile = () => {
         for (const docs of Render) {
             if (docs.type === "Bio") {
@@ -39,6 +42,9 @@ export default function Home() {
                     ...prevProj,
                     ConvertProjects.toProjects(JSON.stringify(docs)),
                 ]);
+            }
+            if (docs.type === "Footer") {
+                setFooter(ConvertFooter.toFooter(JSON.stringify(docs)));
             }
         }
     };
@@ -65,10 +71,13 @@ export default function Home() {
                 <AboutMeComponent bio={bio!} />
             </section>
             <section>
-                <ExperienceComponent exp={exps!}/>
+                <ExperienceComponent exp={exps!} />
             </section>
             <section>
                 <ProjectComponent proj={project!} />
+            </section>
+            <section>
+                <FooterComponent foot={footer!} />
             </section>
         </>
     );
