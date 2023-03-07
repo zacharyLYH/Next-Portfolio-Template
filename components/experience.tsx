@@ -53,17 +53,16 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                             className="modal cursor-pointer"
                         >
                             <label className="modal-box relative" htmlFor="">
-                                <span>
-                                    Skills involved<br></br>
-                                </span>
+                                {experience.skills ? (
+                                    <span>
+                                        Skills involved<br></br>
+                                    </span>
+                                ) : null}
                                 <span>
                                     {experience.skills?.map((skill) =>
                                         unpackIcons(skill)
                                     )}
                                     <br></br>
-                                </span>
-                                <span>
-                                    Summary<br></br>
                                 </span>
                                 <p className="py-4 text-base">
                                     {experience.story}

@@ -3,7 +3,6 @@ export const Render = [
         type: "Bio",
         name: "Zachary Lee",
         title: "SWE",
-        portfolioPurpose: "Fun",
         socialLinks: [
             "https://github.com/zacharyLYH",
             "www.linkedin.com/in/zacharyleeyh",

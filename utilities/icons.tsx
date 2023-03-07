@@ -1,28 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-    faGolang,
-    faLinkedin,
-    faNodeJs,
-    faPython,
-    faReact,
-    IconDefinition,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-const map = new Map<string, IconDefinition>([
-    ["github", faGithub],
-    ["golang", faGolang],
-    ["nodejs", faNodeJs],
-    ["linkedin", faLinkedin],
-    ["gmail", faEnvelope],
-    ["react", faReact],
-    ["python", faPython],
-]);
+import { Icons } from "./iconsList";
 
 export default function unpackIcons(link: string) {
     var i = 0;
-    for (const entries of Array.from(map)) {
+    for (const entries of Array.from(Icons)) {
         if (link.includes(entries[0])) {
             return (
                 <>
