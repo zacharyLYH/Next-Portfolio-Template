@@ -21,6 +21,7 @@ export default function Home() {
     const [skills, setSkills] = useState<String[]>([]);
     const [project, setProject] = useState<Projects[]>([]);
     const [footer, setFooter] = useState<Footer | null>(null);
+    const skillSet = new Set<String>([]);
     const readRenderfile = () => {
         for (const docs of Render) {
             if (docs.type === "Bio") {
@@ -31,17 +32,17 @@ export default function Home() {
                     ...prevExp,
                     ConvertExperience.toExperience(JSON.stringify(docs)),
                 ]);
-                for (const skill of docs.skills!) {
-                    if (!skills.includes(skill)) {
-                        setSkills((allSkills) => [...allSkills, skill]);
-                    }
-                }
             }
             if (docs.type === "Project") {
                 setProject((prevProj) => [
                     ...prevProj,
                     ConvertProjects.toProjects(JSON.stringify(docs)),
                 ]);
+                if (docs.skills != null) {
+                    for (const skill of docs.skills!) {
+                        skillSet.add(skill);
+                    }
+                }
             }
             if (docs.type === "Footer") {
                 setFooter(ConvertFooter.toFooter(JSON.stringify(docs)));
@@ -50,6 +51,7 @@ export default function Home() {
     };
     if (bio === null) {
         readRenderfile();
+        setSkills(Array.from(skillSet));
     }
     const title = `${bio!?.name + "'s Portfolio"}`;
     return (
@@ -76,7 +78,7 @@ export default function Home() {
                 <ExperienceComponent exp={exps!} />
             </section>
             <section>
-                <ProjectComponent proj={project!} />
+                <ProjectComponent proj={project!} skills={skills} />
             </section>
             <section>
                 <FooterComponent foot={footer!} />

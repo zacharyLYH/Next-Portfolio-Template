@@ -4,9 +4,10 @@ import unpackIcons from "utilities/icons";
 
 export interface ProjectProps {
     proj: Projects[];
+    skills: String[];
 }
 
-export default function ProjectComponent({ proj }: ProjectProps) {
+export default function ProjectComponent({ proj, skills }: ProjectProps) {
     const [page, setPage] = useState(1);
     const [renderProjects, setRenderProjects] = useState<Projects[]>(
         proj.slice(0, Math.min(proj.length, 6))
