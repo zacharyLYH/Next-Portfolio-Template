@@ -40,6 +40,7 @@ export default function FooterComponent(foot: FooterProps) {
                     <a className="link" href="https://github.com/zacharyLYH">
                         Zachary Lee
                     </a>
+                    {/* Please leave awknowledgements in */}
                 </p>
             </div>
             <div>

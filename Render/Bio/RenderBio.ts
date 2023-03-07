@@ -8,15 +8,16 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface Bio {
-    type:             string;
-    name:             string;
-    title:            string;
-    portfolioPurpose: string;
-    socialLinks:      string[];
-    tldr:             string;
-    aboutMe:          string;
-    image:            string;
-    hobbies:          string[];
+    type?:             string;
+    name?:             string;
+    title?:            string;
+    portfolioPurpose?: string;
+    socialLinks?:      string[];
+    tldr?:             string;
+    aboutMe?:          string;
+    image?:            string;
+    hobbies?:          string[];
+    jobStatus?:        string;
 }
 
 // Converts JSON strings to/from your types
@@ -185,14 +186,15 @@ function r(name: string) {
 
 const typeMap: any = {
     "Bio": o([
-        { json: "type", js: "type", typ: "" },
-        { json: "name", js: "name", typ: "" },
-        { json: "title", js: "title", typ: "" },
-        { json: "portfolioPurpose", js: "portfolioPurpose", typ: "" },
-        { json: "socialLinks", js: "socialLinks", typ: a("") },
-        { json: "tldr", js: "tldr", typ: "" },
-        { json: "aboutMe", js: "aboutMe", typ: "" },
-        { json: "image", js: "image", typ: "" },
-        { json: "hobbies", js: "hobbies", typ: a("") },
+        { json: "type", js: "type", typ: u(undefined, "") },
+        { json: "name", js: "name", typ: u(undefined, "") },
+        { json: "title", js: "title", typ: u(undefined, "") },
+        { json: "portfolioPurpose", js: "portfolioPurpose", typ: u(undefined, "") },
+        { json: "socialLinks", js: "socialLinks", typ: u(undefined, a("")) },
+        { json: "tldr", js: "tldr", typ: u(undefined, "") },
+        { json: "aboutMe", js: "aboutMe", typ: u(undefined, "") },
+        { json: "image", js: "image", typ: u(undefined, "") },
+        { json: "hobbies", js: "hobbies", typ: u(undefined, a("")) },
+        { json: "jobStatus", js: "jobStatus", typ: u(undefined, "") },
     ], false),
 };

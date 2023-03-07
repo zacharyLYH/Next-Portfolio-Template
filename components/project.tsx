@@ -16,7 +16,6 @@ export default function ProjectComponent({ proj }: ProjectProps) {
         for (var i = (page - 1) * 6; i < page * 6; i++) {
             newProj.push(proj[i]);
         }
-        console.log(newProj);
         setRenderProjects(newProj);
     }, [page]);
     return (
@@ -29,7 +28,7 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                     (e) =>
                         e != null && (
                             <div key={e.story} className="p-2">
-                                <div className="card w-96 justify-center bg-gray-100 shadow-2xl">
+                                <div className="card w-96 justify-center shadow-2xl">
                                     <div className="card-body">
                                         <h2 className="card-title p-2 font-bold">
                                             {e.name}

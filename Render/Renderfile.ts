@@ -18,6 +18,7 @@ export const Render = [
             "games",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tellus at urna condimentum mattis pellentesque id nibh. Et ligula ullamcorper malesuada proin. Libero justo laoreet sit amet cursus sit amet dictum. Lacus laoreet non curabitur gravida arcu. Eu lobortis elementum nibh tellus molestie nunc non. Montes nascetur ridiculus mus mauris vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Ut etiam sit amet nisl. Turpis egestas maecenas pharetra convallis posuere. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lacinia at quis risus sed vulputate odio ut enim. Commodo viverra maecenas accumsan lacus. Duis at consectetur lorem donec massa sapien faucibus. Eget nulla facilisi etiam dignissim diam quis enim lobortis. Consequat ac felis donec et odio pellentesque diam. At varius vel pharetra vel turpis nunc eget lorem. Libero nunc consequat interdum varius sit amet mattis. Diam donec adipiscing tristique risus nec.",
         ],
+        jobStatus: "Interview Ready",
     },
     {
         type: "Project",

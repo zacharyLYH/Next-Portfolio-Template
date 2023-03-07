@@ -32,7 +32,7 @@ export default function AboutMeComponent({ bio }: HeroProps) {
                             More fun facts
                         </h2>
                         <ul className="list-disc">
-                            {bio.hobbies.map((hobby, index) => (
+                            {bio.hobbies?.map((hobby, index) => (
                                 <li
                                     className="p-2 text-justify leading-relaxed"
                                     key={index}
