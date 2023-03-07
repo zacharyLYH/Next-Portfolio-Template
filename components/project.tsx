@@ -4,26 +4,68 @@ import unpackIcons from "utilities/icons";
 
 export interface ProjectProps {
     proj: Projects[];
-    skills: String[];
+    skills: string[];
 }
 
 export default function ProjectComponent({ proj, skills }: ProjectProps) {
     const [page, setPage] = useState(1);
-    const [renderProjects, setRenderProjects] = useState<Projects[]>(
-        proj.slice(0, Math.min(proj.length, 6))
-    );
+    const [renderProjects, setRenderProjects] = useState<Projects[]>([]);
+    const [filter, setFilter] = useState("");
+    const [numProjects, setNumProjects] = useState(0);
     useEffect(() => {
         const newProj: Projects[] = [];
+        const filtered: Projects[] = [];
+        for (const p of proj) {
+            if (filter == "" || p.skills?.includes(filter)) {
+                filtered.push(p);
+            }
+        }
+        setNumProjects(filtered.length);
         for (var i = (page - 1) * 6; i < page * 6; i++) {
-            newProj.push(proj[i]);
+            newProj.push(filtered[i]);
         }
         setRenderProjects(newProj);
-    }, [page]);
+    }, [page, filter]);
     return (
         <div className="flex flex-col items-center h-full">
-            <span className="font-bold text-center text-2xl font-serif ">
+            <span className="font-bold text-center text-5xl font-serif ">
                 Projects
             </span>
+            <div
+                className="dropdown dropdown-hover mt-4 tooltip"
+                data-tip="Filter here"
+            >
+                <label tabIndex={0} className="btn btn-info m-1">
+                    What skills interests you?
+                </label>
+                <ul
+                    tabIndex={0}
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                    <li key="clear">
+                        <a
+                            onClick={() => {
+                                setFilter("");
+                                setPage(1);
+                            }}
+                        >
+                            Clear
+                        </a>
+                    </li>
+                    {skills.map((skill) => (
+                        <li key={skill}>
+                            <a
+                                onClick={() => {
+                                    setFilter(skill);
+                                    setPage(1);
+                                }}
+                            >
+                                {skill}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
             <div className="flex flex-wrap items-center justify-center lg:mx-56 md:48">
                 {renderProjects.map(
                     (e) =>
@@ -34,12 +76,12 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                         <h2 className="card-title p-2 font-bold">
                                             {e.name}
                                             {e.current ? (
-                                                <div className="badge badge-secondary">
+                                                <div className="badge badge-error">
                                                     Current
                                                 </div>
                                             ) : null}
                                             {e.featured ? (
-                                                <div className="badge badge-secondary">
+                                                <div className="badge badge-success">
                                                     Featured
                                                 </div>
                                             ) : null}
@@ -116,7 +158,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                 <button
                     className="btn"
                     onClick={
-                        page < proj.length / 6
+                        page < numProjects / 6
                             ? () => setPage(page + 1)
                             : () => setPage(page)
                     }

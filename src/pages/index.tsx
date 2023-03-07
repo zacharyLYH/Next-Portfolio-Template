@@ -18,10 +18,10 @@ import SideBarComponent from "components/sidebar";
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
     const [exps, setExp] = useState<Experience[]>([]);
-    const [skills, setSkills] = useState<String[]>([]);
+    const [skills, setSkills] = useState<string[]>([]);
     const [project, setProject] = useState<Projects[]>([]);
     const [footer, setFooter] = useState<Footer | null>(null);
-    const skillSet = new Set<String>([]);
+    const skillSet = new Set<string>([]);
     const readRenderfile = () => {
         for (const docs of Render) {
             if (docs.type === "Bio") {
