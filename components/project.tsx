@@ -8,6 +8,7 @@ export interface ProjectProps {
 
 export default function ProjectComponent({ proj }: ProjectProps) {
     const [page, setPage] = useState(1);
+    // const [renderProjects, setRenderPr]
     const onPage = (index: number) => {
         if (index >= (page - 1) * 6 && index < page * 6) {
             return true;
@@ -19,9 +20,9 @@ export default function ProjectComponent({ proj }: ProjectProps) {
             <span className="font-bold text-center text-2xl font-serif ">
                 Projects
             </span>
-            <div className="flex flex-wrap items-center justify-center mx-56">
+            <div className="flex flex-wrap items-center justify-center lg:mx-56 md:48">
                 {proj.map((e, index) =>
-                    onPage(index) ? (
+                    onPage(index) && (
                         <div key={e.story} className="basis-1/3 flex-none">
                             <div className=" card shadow-2xl ">
                                 <div className="card-body">
@@ -94,7 +95,7 @@ export default function ProjectComponent({ proj }: ProjectProps) {
                                 </div>
                             </div>
                         </div>
-                    ) : null
+                    ) 
                 )}
             </div>
             <div className="btn-group">

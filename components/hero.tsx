@@ -19,12 +19,16 @@ export default function HeroComponent({ bio }: HeroProps) {
                 />
                 <div>
                     <span className="text-xl p-2">Hi, my name is</span>
-                    <h1 className="text-5xl font-bold p-2">{bio.name}</h1>
+                    <h1 className="text-7xl font-bold p-2">{bio.name}</h1>
                     <span className="text-2xl p-2 italic">{bio.title}</span>
-                    <p className="py-6 text-xl p-2">
-                        {bio.tldr}
-                    </p>
-                    <button className="btn btn-primary">Resume</button>
+                    <p className="py-6 text-xl p-2">{bio.tldr}</p>
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="btn btn-primary">Resume</button>
+                    </a>
                 </div>
             </div>
         </div>

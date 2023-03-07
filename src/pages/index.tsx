@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useState } from "react";
-import Theme from "components/theme";
 import { Render } from "Render/Renderfile";
 import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
 import {
@@ -64,7 +63,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* <Theme /> */}
             <section>
                 <HeroComponent bio={bio!} />
             </section>
