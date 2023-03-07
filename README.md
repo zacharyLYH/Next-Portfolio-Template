@@ -120,7 +120,9 @@ links: ["https://github.com/link-to-your-portfolio-template-repo"],
 
 ### Tips for success / optimization
 - Use plenty of emojis :cowboy_hat_face: 
-- Make use of project skills!
+- SORT YOUR PROJECTS AND EXPERIENCES BY SHOW-WORTHINESS
+  - The `RenderFile` is read sequentially, ie, objects at the top of the file are read first and thus will be showed first on the UI. Make sure to put those you want seen in front of those you don't mind not being paid less attention. 
+- Make use of project skills! The filtering tool is made expressly so that you won't be disadvantaged throwing a viewer a ton of projects! 
 - Provide as much data as possible (try making use of all the available fields) 
 - Submit issues/feature requests when you see them
 - Continue making changes and sending in PRs on successful feature enhancements.
