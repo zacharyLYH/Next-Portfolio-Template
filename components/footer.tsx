@@ -7,7 +7,7 @@ export interface FooterProps {
 
 export default function FooterComponent(foot: FooterProps) {
     return (
-        <footer className="footer footer-center p-10 bg-neutral text-primary-content">
+        <footer className="footer footer-center p-10 bg-neutral text-primary-content mt-44 h-full">
             <div>
                 <svg
                     width="50"

@@ -18,7 +18,6 @@ const map = new Map<string, IconDefinition>([
     ["gmail", faEnvelope],
     ["react", faReact],
     ["python", faPython],
-    
 ]);
 
 export default function unpackIcons(link: string) {

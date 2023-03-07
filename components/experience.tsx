@@ -7,7 +7,7 @@ export interface ExperienceProps {
 
 export default function ExperienceComponent({ exp }: ExperienceProps) {
     return (
-        <div className="flex flex-row h-screen items-center justify-center lg:mx-96 md:mx-auto sm:mx-auto overflow-y-auto">
+        <div className="flex flex-row h-full items-center justify-center lg:mx-96 md:mx-auto sm:mx-auto overflow-y-auto mt-16 mb-16">
             <h1 className="text-2xl font-bold font-serif text-center">
                 Experience<br></br> (Click the cards!)
             </h1>

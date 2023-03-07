@@ -81,7 +81,6 @@ export default function Home() {
             <section>
                 <FooterComponent foot={footer!} />
             </section>
-            
         </>
     );
 }
