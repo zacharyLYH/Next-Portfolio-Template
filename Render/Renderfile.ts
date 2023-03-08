@@ -5,7 +5,7 @@ export const Render = [
         title: "Software Engineer; Full stack developer 🤓",
         socialLinks: [
             "https://github.com/zacharyLYH",
-            "www.linkedin.com/in/zacharyleeyh",
+            "https://www.linkedin.com/in/zacharyleeyh",
             "leeyihong03@gmail.com",
         ],
         tldr: "💻SWE @ Spawnn 📚CS @ UB'23 ✅Self-starting; Nimble; Curious",
