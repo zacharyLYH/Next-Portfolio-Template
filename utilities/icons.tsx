@@ -1,30 +1,42 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "./iconsList";
+import Image from "next/image";
+import { IconsList } from "./iconsList";
 
 export default function unpackIcons(link: string) {
-    var i = 0;
-    for (const entries of Array.from(Icons)) {
-        if (link.includes(entries[0])) {
-            return (
-                <>
-                    {entries[0] === "gmail" ? (
-                        <a href={`mailto:${link}`} key={entries[0]}>
-                            <FontAwesomeIcon
-                                icon={entries[1]}
-                                className="p-2 fa-2x"
-                            />
-                        </a>
-                    ) : (
-                        <a href={link} key={entries[0]}>
-                            <FontAwesomeIcon
-                                icon={entries[1]}
-                                className="p-2 fa-2x"
-                            />
-                        </a>
-                    )}
-                </>
-            );
+    return (
+        <>
+            {link.includes("gmail") ? (
+                <a href={`mailto:${link}`} key={link} className="p-1">
+                    {RetIcon("gmail")}
+                </a>
+            ) : link.includes(".com") ? (
+                <a href={link} key={link} className="p-1">
+                    {RetIcon(LinkToIcon(link))}
+                </a>
+            ) : (
+                <span className="p-1">{RetIcon(LinkToIcon(link))}</span>
+            )}
+        </>
+    );
+}
+
+function LinkToIcon(link: string) {
+    for (const icons of IconsList) {
+        if (link.includes(icons)) {
+            return icons;
         }
-        i++;
     }
+    return "notFound";
+}
+
+function RetIcon(icon: string) {
+    return (
+        <Image
+            priority
+            src={`/icons/${icon}.svg`}
+            height={40}
+            width={40}
+            alt={icon}
+            className="inline"
+        />
+    );
 }
