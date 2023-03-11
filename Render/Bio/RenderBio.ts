@@ -8,16 +8,21 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface Bio {
-    type?:             string;
-    name?:             string;
-    title?:            string;
-    portfolioPurpose?: string;
-    socialLinks?:      string[];
-    tldr?:             string;
-    aboutMe?:          string;
-    image?:            string;
-    hobbies?:          string[];
-    jobStatus?:        string;
+    type?:        string;
+    name?:        string;
+    title?:       string;
+    socialLinks?: string[];
+    tldr?:        string;
+    aboutMe?:     string;
+    image?:       string;
+    hobbies?:     string[];
+    jobStatus?:   string;
+    docs?:        Docs;
+}
+
+export interface Docs {
+    resume?:     string;
+    transcript?: string;
 }
 
 // Converts JSON strings to/from your types
@@ -189,12 +194,16 @@ const typeMap: any = {
         { json: "type", js: "type", typ: u(undefined, "") },
         { json: "name", js: "name", typ: u(undefined, "") },
         { json: "title", js: "title", typ: u(undefined, "") },
-        { json: "portfolioPurpose", js: "portfolioPurpose", typ: u(undefined, "") },
         { json: "socialLinks", js: "socialLinks", typ: u(undefined, a("")) },
         { json: "tldr", js: "tldr", typ: u(undefined, "") },
         { json: "aboutMe", js: "aboutMe", typ: u(undefined, "") },
         { json: "image", js: "image", typ: u(undefined, "") },
         { json: "hobbies", js: "hobbies", typ: u(undefined, a("")) },
         { json: "jobStatus", js: "jobStatus", typ: u(undefined, "") },
+        { json: "docs", js: "docs", typ: u(undefined, r("Docs")) },
+    ], false),
+    "Docs": o([
+        { json: "resume", js: "resume", typ: u(undefined, "") },
+        { json: "transcript", js: "transcript", typ: u(undefined, "") },
     ], false),
 };

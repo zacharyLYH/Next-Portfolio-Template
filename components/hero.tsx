@@ -22,13 +22,28 @@ export default function HeroComponent({ bio }: HeroProps) {
                     <h1 className="text-8xl font-bold p-2">{bio.name}</h1>
                     <span className="text-3xl p-2 italic">{bio.title}</span>
                     <p className="py-6 text-xl p-2">{bio.tldr}</p>
-                    <a
-                        href="/resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button className="btn btn-primary">Resume</button>
-                    </a>
+                    {bio.docs?.resume && (
+                        <a
+                            href={bio.docs.resume}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="btn btn-primary mr-2">
+                                Resume
+                            </button>
+                        </a>
+                    )}
+                    {bio.docs?.transcript && (
+                        <a
+                            href={bio.docs.transcript}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="btn btn-primary mr-2">
+                                Transcript
+                            </button>
+                        </a>
+                    )}
                     <div className="badge badge-accent badge-md badge-outline ml-4">
                         {bio.jobStatus}
                     </div>
