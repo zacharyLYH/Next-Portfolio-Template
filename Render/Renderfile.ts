@@ -40,6 +40,7 @@ export const Render = [
             "nextjs",
             "expressjs",
             "tailwindcss",
+            "typescript"
         ],
         story: "🟡 Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
         scalability and maintainability. \
