@@ -18,9 +18,12 @@ export default function HeroComponent({ bio }: HeroProps) {
                     priority={true}
                 />
                 <div>
-                    <span className="text-xl p-2">Hi, my name is</span>
-                    <h1 className="text-8xl font-bold p-2">{bio.name}</h1>
-                    <span className="text-3xl p-2 italic">{bio.title}</span>
+                    <p className="text-xl p-2">Hi, my name is</p>
+                    <div className="indicator">
+                        <span className="indicator-item badge badge-success"></span>
+                        <h1 className="text-8xl font-bold p-2">{bio.name}</h1>
+                    </div>
+                    <p className="text-3xl p-2 italic">{bio.title}</p>
                     <p className="py-6 text-xl p-2">{bio.tldr}</p>
                     {bio.docs?.resume && (
                         <a
