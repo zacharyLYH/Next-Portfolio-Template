@@ -1,20 +1,33 @@
-import {
-    faGithub,
-    faGolang,
-    faLinkedin,
-    faNodeJs,
-    faPython,
-    faReact,
-    IconDefinition,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-export const Icons = new Map<string, IconDefinition>([
-    ["github", faGithub],
-    ["golang", faGolang],
-    ["nodejs", faNodeJs],
-    ["linkedin", faLinkedin],
-    ["gmail", faEnvelope],
-    ["react", faReact],
-    ["python", faPython],
-]);
+export const IconsList = [
+    "github",
+    "golang",
+    "nodejs",
+    "linkedin",
+    "gmail",
+    "reactjs",
+    "python",
+    "mongodb",
+    "leetcode",
+    "nextjs",
+    "expressjs",
+    "tutor",
+    "tailwindcss",
+    "vercel",
+    "encryption",
+    "webhosting",
+    "pypi",
+    "oop",
+    "api",
+    "clanguage",
+    "linux",
+    "elasticsearch",
+    "cpp",
+    "typescript",
+    "teamwork",
+    "zenhub",
+    "makefile",
+    "scikitlearn",
+    "algorithms",
+    "electronjs",
+    "scala"
+];

@@ -12,11 +12,80 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
     const [renderProjects, setRenderProjects] = useState<Projects[]>([]);
     const [filter, setFilter] = useState("");
     const [numProjects, setNumProjects] = useState(0);
+    const [viewSkills, setViewSkills] = useState(false);
+    const FilterProject = () => {
+        return (
+            <ul tabIndex={0} className="h-96 overflow-x-auto">
+                <li
+                    key="clear"
+                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
+                >
+                    <a
+                        onClick={() => {
+                            setFilter("");
+                            setPage(1);
+                            setViewSkills(false);
+                        }}
+                    >
+                        Clear
+                    </a>
+                </li>
+                <li
+                    key="clear"
+                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
+                >
+                    <a
+                        onClick={() => {
+                            setFilter("current");
+                            setPage(1);
+                            setViewSkills(false);
+                        }}
+                    >
+                        Current
+                    </a>
+                </li>
+                <li
+                    key="clear"
+                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
+                >
+                    <a
+                        onClick={() => {
+                            setFilter("featured");
+                            setPage(1);
+                            setViewSkills(false);
+                        }}
+                    >
+                        Featured
+                    </a>
+                </li>
+                {skills.map((skill) => (
+                    <li
+                        key={skill}
+                        className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
+                    >
+                        <a
+                            onClick={() => {
+                                setFilter(skill);
+                                setPage(1);
+                                setViewSkills(false);
+                            }}
+                        >
+                            {skill}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        );
+    };
     useEffect(() => {
         const newProj: Projects[] = [];
         const filtered: Projects[] = [];
         for (const p of proj) {
             if (filter == "" || p.skills?.includes(filter)) {
+                filtered.push(p);
+            } else if (filter == "current" && p.current) {
+                filtered.push(p);
+            } else if (filter == "featured" && p.featured) {
                 filtered.push(p);
             }
         }
@@ -28,44 +97,17 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
     }, [page, filter]);
     return (
         <div className="flex flex-col items-center h-full">
-            <span className="font-bold text-center text-5xl font-serif ">
+            <span className="font-bold text-center text-5xl font-serif mb-10">
                 Projects
             </span>
-            <div
-                className="dropdown dropdown-hover mt-4 tooltip"
-                data-tip="Filter here"
+            <button
+                onClick={() => setViewSkills(!viewSkills)}
+                className="btn btn-wide btn-info m-1 tooltip tooltip-left"
+                data-tip="Reminder: Even more skills in Experience section!"
             >
-                <label tabIndex={0} className="btn btn-info m-1">
-                    What skills interests you?
-                </label>
-                <ul
-                    tabIndex={0}
-                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                    <li key="clear">
-                        <a
-                            onClick={() => {
-                                setFilter("");
-                                setPage(1);
-                            }}
-                        >
-                            Clear
-                        </a>
-                    </li>
-                    {skills.map((skill) => (
-                        <li key={skill}>
-                            <a
-                                onClick={() => {
-                                    setFilter(skill);
-                                    setPage(1);
-                                }}
-                            >
-                                {skill}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                What skills interests you?
+            </button>
+            {viewSkills && <FilterProject />}
             <div className="flex flex-wrap items-center justify-center lg:mx-56 md:48">
                 {renderProjects.map(
                     (e) =>
@@ -89,11 +131,8 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                         <p className=" p-2 text-justify ">
                                             {e.summary}
                                         </p>
-                                        <div className="justify-items-start ">
-                                            <span
-                                                className="tooltip"
-                                                data-tip="Skills involved"
-                                            >
+                                        <div className="justify-items-start inline">
+                                            <span>
                                                 {e.skills!.map((skill) =>
                                                     unpackIcons(skill)
                                                 )}
@@ -120,22 +159,27 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                                     htmlFor=""
                                                 >
                                                     <span className="font-bold">
-                                                        Story:{" "}
+                                                        {e.name}
                                                     </span>
                                                     <p className="py-4">
                                                         {e.story}
                                                     </p>
-                                                    <span className="font-bold">
-                                                        Check them out:{" "}
-                                                    </span>
-                                                    <p
-                                                        className="gap-16 tooltip"
-                                                        data-tip="Related links"
-                                                    >
-                                                        {e.links!.map((link) =>
-                                                            unpackIcons(link)
-                                                        )}
-                                                    </p>
+                                                    {e.links ? (
+                                                        <span className="font-bold">
+                                                            Check them out:
+                                                            <span
+                                                                className="flex justify-start gap-1 inline tooltip"
+                                                                data-tip="Related links"
+                                                            >
+                                                                {e.links!.map(
+                                                                    (link) =>
+                                                                        unpackIcons(
+                                                                            link
+                                                                        )
+                                                                )}
+                                                            </span>
+                                                        </span>
+                                                    ) : null}
                                                 </label>
                                             </label>
                                         </div>

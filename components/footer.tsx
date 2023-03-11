@@ -24,7 +24,7 @@ export default function FooterComponent(foot: FooterProps) {
                     <p className="font-bold">
                         Created by {foot.foot.author}
                         <br />
-                        with love!
+                        with love! ❤️
                     </p>
                 ) : null}
                 <p>

@@ -15,7 +15,9 @@ export default function SideBarComponent({ links }: SideBarProps) {
             >
                 <Theme />
                 {links.socialLinks?.map((link) => (
-                    <div key={link}>{unpackIcons(link)}</div>
+                    <div key={link} className="py-2">
+                        {unpackIcons(link)}
+                    </div>
                 ))}
             </div>
         </div>
