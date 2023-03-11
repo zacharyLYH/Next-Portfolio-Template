@@ -35,7 +35,7 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                     <p className="text-justify text-base not-italic font-medium tracking-wide">
                                         {experience.summary}
                                     </p>
-                                    <p className="text-justify">
+                                    <p className="text-justify inline">
                                         {experience.links?.map((link) =>
                                             unpackIcons(link)
                                         )}
