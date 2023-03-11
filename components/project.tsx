@@ -158,16 +158,16 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                                     htmlFor=""
                                                 >
                                                     <span className="font-bold">
-                                                        Story:{" "}
+                                                        {e.name}
                                                     </span>
                                                     <p className="py-4">
                                                         {e.story}
                                                     </p>
                                                     {e.links ? (
-                                                        <span className="font-bold inline">
-                                                            Check them out:{" "}
+                                                        <span className="font-bold">
+                                                            Check them out:
                                                             <span
-                                                                className="gap-16 tooltip"
+                                                                className="flex justify-start gap-1 inline tooltip"
                                                                 data-tip="Related links"
                                                             >
                                                                 {e.links!.map(

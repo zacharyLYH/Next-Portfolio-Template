@@ -35,11 +35,12 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                     <p className="text-justify text-base not-italic font-medium tracking-wide">
                                         {experience.summary}
                                     </p>
-                                    <p className="text-justify inline">
-                                        {experience.links?.map((link) =>
-                                            unpackIcons(link)
+                                    <span className="flex justify-start gap-1 inline">
+                                        {experience.skills?.map((skill) =>
+                                            unpackIcons(skill)
                                         )}
-                                    </p>
+                                        <br></br>
+                                    </span>
                                 </div>
                             </div>
                         </label>
@@ -53,20 +54,19 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                             className="modal cursor-pointer"
                         >
                             <label className="modal-box relative" htmlFor="">
-                                {experience.skills ? (
-                                    <span>
-                                        Skills involved<br></br>
-                                    </span>
-                                ) : null}
-                                <span className="inline px-2">
-                                    {experience.skills?.map((skill) =>
-                                        unpackIcons(skill)
-                                    )}
-                                    <br></br>
-                                </span>
                                 <p className="py-4 text-base">
                                     {experience.story}
                                 </p>
+                                {experience.links && (
+                                    <span
+                                        className="gap-16 tooltip"
+                                        data-tip="Related links"
+                                    >
+                                        {experience.links?.map((link) =>
+                                            unpackIcons(link)
+                                        )}
+                                    </span>
+                                )}
                             </label>
                         </label>
                     </li>
