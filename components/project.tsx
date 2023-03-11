@@ -90,10 +90,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                             {e.summary}
                                         </p>
                                         <div className="justify-items-start inline">
-                                            <span
-                                                className="tooltip"
-                                                data-tip="Skills involved"
-                                            >
+                                            <span>
                                                 {e.skills!.map((skill) =>
                                                     unpackIcons(skill)
                                                 )}

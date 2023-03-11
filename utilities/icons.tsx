@@ -13,7 +13,9 @@ export default function unpackIcons(link: string) {
                     {RetIcon(LinkToIcon(link))}
                 </a>
             ) : (
-                <span className="p-1">{RetIcon(LinkToIcon(link))}</span>
+                <span className="p-1 tooltip" data-tip={link}>
+                    {RetIcon(LinkToIcon(link))}
+                </span>
             )}
         </>
     );
