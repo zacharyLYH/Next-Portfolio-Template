@@ -102,7 +102,8 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
             </span>
             <button
                 onClick={() => setViewSkills(!viewSkills)}
-                className="btn btn-wide btn-info m-1"
+                className="btn btn-wide btn-info m-1 tooltip tooltip-left"
+                data-tip="Reminder: Even more skills in Experience section!"
             >
                 What skills interests you?
             </button>
