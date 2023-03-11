@@ -58,7 +58,7 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                         Skills involved<br></br>
                                     </span>
                                 ) : null}
-                                <span>
+                                <span className="inline">
                                     {experience.skills?.map((skill) =>
                                         unpackIcons(skill)
                                     )}

@@ -89,7 +89,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                         <p className=" p-2 text-justify ">
                                             {e.summary}
                                         </p>
-                                        <div className="justify-items-start ">
+                                        <div className="justify-items-start inline">
                                             <span
                                                 className="tooltip"
                                                 data-tip="Skills involved"
