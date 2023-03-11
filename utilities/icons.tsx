@@ -38,7 +38,6 @@ function RetIcon(icon: string) {
             height={40}
             width={40}
             alt={icon}
-            className="inline"
         />
     );
 }
