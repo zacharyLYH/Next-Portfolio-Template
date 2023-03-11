@@ -6,7 +6,7 @@ export interface HeroProps {
 
 export default function AboutMeComponent({ bio }: HeroProps) {
     return (
-        <div className="flex flex-row items-center justify-center lg:mx-96 md:mx-auto sm:mx-auto h-full mb-16 mt-16">
+        <div className="flex flex-row items-center justify-center lg:mx-96 md:mx-auto sm:mx-auto h-full mb-56 mt-16">
             <div className="basis-2/3 flex-wrap">
                 <div className=" card shadow-2xl ">
                     <div

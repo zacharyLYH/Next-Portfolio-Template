@@ -2,243 +2,245 @@ export const Render = [
     {
         type: "Bio",
         name: "Zachary Lee",
-        title: "SWE",
+        title: "Software Engineer; Full stack developer 🤓",
         socialLinks: [
             "https://github.com/zacharyLYH",
-            "www.linkedin.com/in/zacharyleeyh",
+            "https://www.linkedin.com/in/zacharyleeyh",
             "leeyihong03@gmail.com",
+            "https://leetcode.com/zacharylyh/",
         ],
-        tldr: "My tldr My tldr My tldr My tldr My tldr My tldr My tldr My tldr",
+        tldr: "💻SWE @ Spawnn 📚CS @ UB'23 ✅Self-starting; Nimble; Curious",
         aboutMe:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra aliquet eget sit amet tellus. Morbi non arcu risus quis varius quam. Tempor commodo ullamcorper a lacus vestibulum. Facilisis mauris sit amet massa vitae tortor condimentum. Nam libero justo laoreet sit amet cursus sit amet. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Tellus mauris a diam maecenas sed enim. Lobortis feugiat vivamus at augue eget. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.Porttitor leo a diam sollicitudin tempor id eu. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Feugiat vivamus at augue eget. Fermentum odio eu feugiat pretium nibh ipsum consequat. Eget arcu dictum varius duis at consectetur lorem. Mi ipsum faucibus vitae aliquet. Donec massa sapien faucibus et molestie. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Augue ut lectus arcu bibendum at varius vel pharetra vel. Quis viverra nibh cras pulvinar mattis. Egestas maecenas pharetra convallis posuere morbi. Sem viverra aliquet eget sit amet tellus cras adipiscing. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Lobortis scelerisque fermentum dui faucibus in ornare quam. Adipiscing enim eu turpis egestas pretium. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Amet massa vitae tortor condimentum lacinia.Neque laoreet suspendisse interdum consectetur libero id. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Mauris rhoncus aenean vel elit scelerisque mauris. Mauris sit amet massa vitae. Ullamcorper a lacus vestibulum sed arcu non odio. Sed sed risus pretium quam vulputate dignissim suspendisse in. Fermentum dui faucibus in ornare quam. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Mauris augue neque gravida in fermentum et. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet mauris commodo quis. Fames ac turpis egestas maecenas.Ultrices mi tempus imperdiet nulla. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Imperdiet dui accumsan sit amet nulla. Mattis pellentesque id nibh tortor id aliquet. Sodales ut eu sem integer vitae. Quis eleifend quam adipiscing vitae proin. Eget nunc scelerisque viverra mauris. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Nam aliquam sem et tortor consequat id. Ultrices vitae auctor eu augue utFringilla urna porttitor rhoncus dolor purus non enim. Maecenas ultricies mi eget mauris pharetra et ultrices. Sagittis vitae et leo duis ut diam. At auctor urna nunc id cursus. Cras fermentum odio eu feugiat pretium nibh ipsum. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Gravida cum sociis natoque penatibus. Purus semper eget duis at. Tristique senectus et netus et malesuada fames ac turpis egestas. Est ante in nibh mauris cursus mattis. Arcu non odio euismod lacinia at quis risus sed. Luctus venenatis lectus magna fringilla urna porttitor. Amet facilisis magna etiam tempor.",
+            "🔵I am a soon-to-be fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have close to 9 months of professional Software Engineering experience. \
+        🔵 I am a natural leader. I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects. This is because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. \
+        🔵 I am extremely passionate about learning. I believe learning is what makes a good life a great life, and what separates the best among the big talent pool. \
+        🔵 I work hard. I usually have no problem being the first person to start a day’s work, and the last person to end the day. However, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
         image: "/headshot.jpeg",
         hobbies: [
-            "cooking",
-            "games",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tellus at urna condimentum mattis pellentesque id nibh. Et ligula ullamcorper malesuada proin. Libero justo laoreet sit amet cursus sit amet dictum. Lacus laoreet non curabitur gravida arcu. Eu lobortis elementum nibh tellus molestie nunc non. Montes nascetur ridiculus mus mauris vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Ut etiam sit amet nisl. Turpis egestas maecenas pharetra convallis posuere. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lacinia at quis risus sed vulputate odio ut enim. Commodo viverra maecenas accumsan lacus. Duis at consectetur lorem donec massa sapien faucibus. Eget nulla facilisi etiam dignissim diam quis enim lobortis. Consequat ac felis donec et odio pellentesque diam. At varius vel pharetra vel turpis nunc eget lorem. Libero nunc consequat interdum varius sit amet mattis. Diam donec adipiscing tristique risus nec.",
+            "Prefer Golang! ",
+            "I love playing and watching CSGO 🔫",
+            "I love to cook 👨‍🍳",
+            "I am an avid reader. The genres I read are mostly on science, theory, and computer science 🔖",
+            "I prefer instrumental music 🎹",
         ],
         jobStatus: "Interview Ready",
+        docs: {
+            resume: "/resume.pdf",
+            transcript: "/transcript.pdf",
+        },
+    },
+    {
+        type: "Experience",
+        title: "Software Engineer",
+        summary: "Full stack MVP development of a video analysis SaSS platform.",
+        skills: [
+            "nodejs",
+            "mongodb",
+            "github",
+            "nextjs",
+            "expressjs",
+            "tailwindcss",
+            "typescript"
+        ],
+        story: "🟡 Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        scalability and maintainability. \
+        🟡 Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
+        🟡 Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
+        🟡 Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
+        🟡 Added new UI features that directly enhanced user experience. \
+        🟡 Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
+        current: true,
+        orgName: "Spawnn",
+        dateStartEnd: "09/2022 - Ongoing",
+    },
+    {
+        type: "Experience",
+        title: "Algorithms and Complexity teaching assistant",
+        summary: "Teaching assistant for a junior year algorithms course.",
+        skills: ["tutor", "algorithms", "python"],
+        current: true,
+        story: "🟡 Conducted office hours and graded for a Junior level Algorithms and Complexity analysis course. UB’s CSE331.\
+        🟡 Assisted students in understanding abstract algorithmic concepts through technical communication and worked examples.\
+        🟡 Further honed technical communication skills through explaining difficult concepts.",
+        orgName: "UB",
+        dateStartEnd: "09/2022 - Ongoing",
+    },
+    {
+        type: "Experience",
+        title: "Open source contributor",
+        summary: "Contributed to an open source game engine",
+        skills: ["python"],
+        story: "🟡 Contributed new features and addressed issues at UB’s open-source club’s Python based Classic-RPG style game engine.\
+        🟡 Contributed core features such as Potions, and many classes such as Health and Speed.\
+        🟡 Learnt what it meant to develop a game engine and practiced Python3, Object-Oriented Paradigm programming, and GitHub skills.",
+        links: ["https://github.com/makeopensource/Classic-RPG"],
+        orgName: "MOS",
+    },
+    {
+        type: "Experience",
+        title: "CS tutor",
+        summary: "Tutored 3 entry-level CS courses.",
+        skills: ["python", "tutor"],
+        story: "🟡 Tutored in UB's CSE115, CSE116 and CSE220. Freshmen and Sophomore year mandatory CS courses. Intro to CS1, Intro to CS2, and Systems Programming respectively.\
+        🟡 Developed technical communication skills and reinforced knowledge about systems, and object-oriented programming.",
+        orgName: "UB",
     },
     {
         type: "Project",
-        name: "swe1",
+        name: "Next-Portfolio-Template",
         summary:
-            "learned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lotlearned a lot",
-        skills: ["golang", "nodejs"],
-        story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tellus at urna condimentum mattis pellentesque id nibh. Et ligula ullamcorper malesuada proin. Libero justo laoreet sit amet cursus sit amet dictum. Lacus laoreet non curabitur gravida arcu. Eu lobortis elementum nibh tellus molestie nunc non. Montes nascetur ridiculus mus mauris vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Ut etiam sit amet nisl. Turpis egestas maecenas pharetra convallis posuere. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lacinia at quis risus sed vulputate odio ut enim. Commodo viverra maecenas accumsan lacus. Duis at consectetur lorem donec massa sapien faucibus. Eget nulla facilisi etiam dignissim diam quis enim lobortis. Consequat ac felis donec et odio pellentesque diam. At varius vel pharetra vel turpis nunc eget lorem. Libero nunc consequat interdum varius sit amet mattis. Diam donec adipiscing tristique risus nec.",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+            "A minimalistic NextJS based portfolio template that only requires JSON knowledge.",
+        skills: [
+            "nextjs",
+            "reactjs",
+            "vercel",
+            "tailwindcss",
+            "elasticsearch",
+            "typescript",
+        ],
+        story: "🟣 A personal capstone project on learning NextJS, ReactJS, and TailwindCSS. \
+        🟣 Designed to be scalable to any number of projects and experience items. \
+        🟣 Designed for the shallowest learning curve to implement and adapt. \
+        🟣 Followed front-end web development best practices. ",
+        links: ["https://github.com/zacharyLYH/Next-Portfolio-Template"],
         current: true,
         featured: true,
-        dateStartToEnd: "1/1 - 2/1",
     },
     {
         type: "Project",
-        name: "swe2",
-        summary: "a",
-        skills: ["nodejs"],
-        story: "dasonsssfd2sxxss",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        name: "Web password manager",
+        summary:
+            "A web hosted CLI app that manages passwords, inspired by SSH and asymmetric encryption protocols.",
+        skills: ["golang", "encryption", "webhosting", "mongodb", "makefile"],
+        story: "🟣 Designed and implementing a full stack web hosted password manager, focusing on security and ease of maintenance.\
+        🟣 Leveraged industry standard protocols such as AES and RSA to safely communicate traffic.\
+        🟣 Motivation behind project is due to lack of free web hosted password managers, thus implementing it as an open-source\
+        project. 🟣 Wrote out an elaborate TDD for ease of other developers to get involved.",
+        links: [
+            "https://github.com/zacharyLYH/Password-Manager-CLI",
+            "https://github.com/zacharyLYH/Password-Manager-Server",
+        ],
         featured: true,
     },
     {
         type: "Project",
-        name: "swe2",
-        summary: "b",
-        skills: ["nodejs"],
-        story: "dasonsssfd2ssszczca",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        name: "Wine price predictor",
+        summary: "Data science project to predict wine prices.",
+        skills: ["python", "scikitlearn"],
+        story: "🟣 Utilized proper data cleaning and EDA steps \
+        🟣 Implementing statistical and ML models, such as regression, clustering, and classifying algorithms.",
+        links: [
+            "https://drive.google.com/drive/folders/1RH-IwkHzTDAXpuh65E9Fc20cm6zSXhTE?usp=sharing",
+        ],
         featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "c",
-        skills: ["nodejs"],
-        story: "dasonsssfd2bvcbsss",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "d",
-        skills: ["nodejs"],
-        story: "dasonsssfd2sssdfs",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "e",
-        skills: ["nodejs"],
-        story: "dasonsssfdrgr22sss",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "f",
-        skills: ["nodejs"],
-        story: "dasonsssfd2sssll",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "g",
-        skills: ["golang"],
-        story: "dasonssnnnnsfd2sss",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        featured: true,
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "h",
-        skills: ["golang"],
-        story: "dasonwerfd2s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "i",
-        skills: ["golang"],
-        story: "dasongnfd2s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "j",
-        skills: ["golang"],
-        story: "dasoxxnfsdfd2s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "k",
-        skills: ["golang"],
-        story: "dasoxx111nfsdfd2s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "l",
-        skills: ["golang"],
-        story: "dasoxx111nfsdfd2m88s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    {
-        type: "Project",
-        name: "swe2",
-        summary: "l",
-        skills: ["golang"],
-        story: "dasoxx111nfsdfd28b8s",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    },
-    // {
-    //     type: "Project",
-    //     name: "swe2",
-    //     summary: "l",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxx111nfsdfd2i88s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    // },
-    // {
-    //     type: "Project",
-    //     name: "swe2",
-    //     summary: "l",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxx111nfsdfd2u88s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    // },
-    // {
-    //     type: "Project",
-    //     name: "swe2",
-    //     summary: "l",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxx111nfsdfd288ls",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    // },
-    // {
-    //     type: "Project",
-    //     name: "swe2",
-    //     summary: "l",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxx111nfsdfd288s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    // },
-    {
-        type: "Experience",
-        title: "swe2",
-        summary: "experience summary",
-        // skills: ["golang", "nodejs"],
-        story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra aliquet eget sit amet tellus. Morbi non arcu risus quis varius quam. Tempor commodo ullamcorper a lacus vestibulum. Facilisis mauris sit amet massa vitae tortor condimentum. Nam libero justo laoreet sit amet cursus sit amet. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Tellus mauris a diam maecenas sed enim. Lobortis feugiat vivamus at augue eget. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.Porttitor leo a diam sollicitudin tempor id eu. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Feugiat vivamus at augue eget. Fermentum odio eu feugiat pretium nibh ipsum consequat. Eget arcu dictum varius duis at consectetur lorem. Mi ipsum faucibus vitae aliquet. Donec massa sapien faucibus et molestie. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Augue ut lectus arcu bibendum at varius vel pharetra vel. Quis viverra nibh cras pulvinar mattis. Egestas maecenas pharetra convallis posuere morbi. Sem viverra aliquet eget sit amet tellus cras adipiscing. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Lobortis scelerisque fermentum dui faucibus in ornare quam. Adipiscing enim eu turpis egestas pretium. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Amet massa vitae tortor condimentum lacinia.Neque laoreet suspendisse interdum consectetur libero id. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Mauris rhoncus aenean vel elit scelerisque mauris. Mauris sit amet massa vitae. Ullamcorper a lacus vestibulum sed arcu non odio. Sed sed risus pretium quam vulputate dignissim suspendisse in. Fermentum dui faucibus in ornare quam. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Mauris augue neque gravida in fermentum et. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet mauris commodo quis. Fames ac turpis egestas maecenas.Ultrices mi tempus imperdiet nulla. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Imperdiet dui accumsan sit amet nulla. Mattis pellentesque id nibh tortor id aliquet. Sodales ut eu sem integer vitae. Quis eleifend quam adipiscing vitae proin. Eget nunc scelerisque viverra mauris. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Nam aliquam sem et tortor consequat id. Ultrices vitae auctor eu augue utFringilla urna porttitor rhoncus dolor purus non enim. Maecenas ultricies mi eget mauris pharetra et ultrices. Sagittis vitae et leo duis ut diam. At auctor urna nunc id cursus. Cras fermentum odio eu feugiat pretium nibh ipsum. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Gravida cum sociis natoque penatibus. Purus semper eget duis at. Tristique senectus et netus et malesuada fames ac turpis egestas. Est ante in nibh mauris cursus mattis. Arcu non odio euismod lacinia at quis risus sed. Luctus venenatis lectus magna fringilla urna porttitor. Amet facilisis magna etiam tempor.",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
         current: true,
-        orgName: "hello",
-        dateStartEnd: "1/1-2/1",
     },
     {
-        type: "Experience",
-        title: "swe2",
-        summary: "experience summarysdf",
-        skills: ["golang", "nodejs"],
-        story: "dasoxxnfd2sbbbbbb",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-        orgName: "hello",
+        type: "Project",
+        name: "File System Visualizer",
+        summary: "Tool to help visualize file systems in the form of a tree.",
+        skills: ["python", "pypi", "oop"],
+        story: "🟣 Implemented an intuitive file system visualizer that presents the system’s directories as an interactive graph. \
+        🟣 Utilized traversal algorithms and optimized data structures, along with modularized p5 functionality.\
+        🟣 Focused on OOP practices, ease of maintenance, and scalability.",
+        links: ["https://github.com/zacharyLYH/FSVisualizer"],
+        featured: true,
     },
     {
-        type: "Experience",
-        title: "swe2",
-        summary: "experience summaryere",
-        skills: ["golang", "nodejs"],
-        story: "dasoxxnfd2scccccccc",
-        links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
+        type: "Project",
+        name: "Project Fines",
+        summary: "Lightweight traffic infringement API.",
+        skills: ["nodejs", "expressjs", "mongodb", "teamwork"],
+        story: "🟣 Led a team of 2 in the development of a traffic infringement fine system involving police, users, and administrators. \
+        🟣 Conceived, architected, and built the Backend from scratch, prioritizing a robust database and codebase design.\
+        🟣 Focused on code modularization, readability, and scalability.",
+        links: ["https://github.com/zacharyLYH/ProjectFines"],
+        featured: true,
+    },
+    {
+        type: "Project",
+        name: "Pintos OS",
+        summary:
+            "Implemented the Pintos OS acheiving full scores on all tests.",
+        skills: ["clanguage", "linux", "teamwork"],
+        story: "🟣 Organized a team of 3 to build the Pintos Operating System, achieving full scores on 120+ (all) test cases. \
+        🟣 Facilitated frequent sync-sessions, code reviews, and pair programming sessions.",
+        featured: true,
+    },
+    {
+        type: "Project",
+        name: "Obsidian notes clone",
+        summary: "Developing a clone of Obsidian, a graphical note taking app.",
+        skills: ["typescript", "electronjs", "reactjs", "teamwork", "zenhub"],
+        story: "🟣 A group based coursework project to build the Obsidian clone in a final year Software Engineering course. \
+        🟣 Practicing core software engineering best practices, such as version control.",
+        featured: true,
         current: true,
-        orgName: "hello",
+    },
+    {
+        type: "Project",
+        name: "Notify-Weather",
+        summary:
+            "Used a public weather API to create a desktop dress-for-the-weather app.",
+        skills: ["python", "api"],
+        story: "🟣 A desktop app that eliminates your need to check the weather ever again. We supply a timed notification of what to take out the house for the day, and what kind of weather to expect tomorrow.",
+        links: ["https://github.com/zacharyLYH/Notify-Weather"],
+    },
+    {
+        type: "Project",
+        name: "Pool allocator",
+        summary:
+            "Implemented a working alternative to C's standard allocators.",
+        skills: ["clanguage", "linux"],
+        story: "🟣 Implemented a working clone of C’s standard allocators - malloc, palloc, and realloc.\
+        🟣 Executes some UNIX commands such as ls, and single-thread applications like vim.",
+    },
+    {
+        type: "Project",
+        name: "Game of Life",
+        summary: "Implemented Conway's Game of Life.",
+        skills: ["clanguage"],
+        story: "🟣 A CLI app that given initial conditions, simulates per the rules of Conway's GOL.",
+    },
+    {
+        type: "Project",
+        name: "Instant messenger",
+        summary: "A client side messaging encoder and decoder.",
+        skills: ["clanguage"],
+        story: "🟣 Encoding and decoding APIs designed as per the specification of the CSE department's web server. \
+        🟣 The functioning version had the ability to connect succesfully to the web server and facilitated online chatting. \
+        🟣 Features include text, status, and @-ing another user. ",
+    },
+    {
+        type: "Project",
+        name: "Username generator",
+        summary: "A simple username permutator that returns a unique username.",
+        skills: ["cpp"],
+        story: "🟣 Takes a name and generates a unique person ID.\
+        🟣 Deals with duplicate person names via a permutation algorithm that permutes the name and returns that permuted ID. \
+        🟣 Suitable for organizational use.",
+        links: ["https://github.com/zacharyLYH/Username"],
+    },
+    {
+        type: "Project",
+        name: "Point of sale",
+        summary: "A point of sale GUI with tax, bottle deposit, discounts, and more functionality.",
+        skills: ["scala", "oop"],
+        story: "🟣 Course project. \
+        🟣 No conditionals were allowed, instead control flow happened via object-orientation approaches.",
+    },
+    {
+        type: "Project",
+        name: "Enemy AI",
+        summary: "Implemented the logic for enemy AI bots in a game.",
+        skills: ["scala", "oop"],
+        story: "🟣 Course project. \
+        🟣 The gaming field is a 2D matrix, and our job is to give the bots logic to smartly traverse the 2D matrix. \
+        🟣 Required the use of BFS",
     },
     {
         type: "Footer",
-        author: "John Smith",
+        author: "Zachary Lee",
         links: ["https://github.com/zacharyLYH"],
     },
-    // {
-    //     type: "Experience",
-    //     title: "swe2",
-    //     summary: "experience summary123",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxxnfd2s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    //     current: true,
-    //     orgName: "hello",
-    // },
-    // {
-    //     type: "Experience",
-    //     title: "swe2",
-    //     summary: "experience summaryss",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxxnfd2s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    //     current: true,
-    //     orgName: "hello",
-    //     dateStartEnd:"1/1-2/1"
-    // },
-    // {
-    //     type: "Experience",
-    //     title: "swe2",
-    //     summary: "experience summaryss",
-    //     skills: ["golang", "nodejs"],
-    //     story: "dasoxxnfdaaaa2s",
-    //     links: ["https://github.com/cse442-at-ub/project_s23-p-np/tree/dev"],
-    //     current: true,
-    //     orgName: "hello",
-    //     dateStartEnd:"1/1-2/1"
-    // },
 ];
