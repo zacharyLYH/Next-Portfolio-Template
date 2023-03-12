@@ -18,60 +18,60 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
             <ul tabIndex={0} className="h-96 overflow-x-auto">
                 <li
                     key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
                 >
-                    <a
+                    <button
                         onClick={() => {
                             setFilter("");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Clear
-                    </a>
+                    </button>
                 </li>
                 <li
                     key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
                 >
-                    <a
+                    <button
                         onClick={() => {
                             setFilter("current");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Current
-                    </a>
+                    </button>
                 </li>
                 <li
                     key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
                 >
-                    <a
+                    <button
                         onClick={() => {
                             setFilter("featured");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Featured
-                    </a>
+                    </button>
                 </li>
                 {skills.map((skill) => (
                     <li
                         key={skill}
-                        className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
                     >
-                        <a
+                        <button
                             onClick={() => {
                                 setFilter(skill);
                                 setPage(1);
                                 setViewSkills(false);
                             }}
+                            className="btn btn-ghost text-center text-justify rounded-md w-52"
                         >
                             {skill}
-                        </a>
+                        </button>
                     </li>
                 ))}
             </ul>
