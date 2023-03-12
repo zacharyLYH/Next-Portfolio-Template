@@ -68,6 +68,7 @@ export default function Home() {
                     content={bio?.name + ", Portfolio"}
                 ></meta>
                 <meta name="author" content={bio?.name}></meta>
+                <link rel="icon" type="image/png" href="/titleicon.png"/>
             </Head>
             <section>
                 <HeroComponent bio={bio!} />
