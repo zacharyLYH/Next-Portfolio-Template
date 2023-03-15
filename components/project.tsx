@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Projects } from "Render/Project/RenderProject";
 import unpackIcons from "utilities/icons";
+import BeautifyParagraph from "utilities/splitLines";
 
 export interface ProjectProps {
     proj: Projects[];
@@ -16,9 +17,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
     const FilterProject = () => {
         return (
             <ul tabIndex={0} className="h-96 overflow-x-auto">
-                <li
-                    key="clear"
-                >
+                <li key="clear">
                     <button
                         onClick={() => {
                             setFilter("");
@@ -30,9 +29,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                         Clear
                     </button>
                 </li>
-                <li
-                    key="clear"
-                >
+                <li key="clear">
                     <button
                         onClick={() => {
                             setFilter("current");
@@ -44,9 +41,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                         Current
                     </button>
                 </li>
-                <li
-                    key="clear"
-                >
+                <li key="clear">
                     <button
                         onClick={() => {
                             setFilter("featured");
@@ -59,9 +54,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                     </button>
                 </li>
                 {skills.map((skill) => (
-                    <li
-                        key={skill}
-                    >
+                    <li key={skill}>
                         <button
                             onClick={() => {
                                 setFilter(skill);
@@ -162,7 +155,10 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                                         {e.name}
                                                     </span>
                                                     <p className="py-4">
-                                                        {e.story}
+                                                        {BeautifyParagraph(
+                                                            e.type!,
+                                                            e.story!
+                                                        )}
                                                     </p>
                                                     {e.links ? (
                                                         <span className="font-bold">
