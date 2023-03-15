@@ -58,12 +58,17 @@ export default function Home() {
         <>
             <Head>
                 <title>{title}</title>
-                <meta name={title} content={title} />
+                <meta name="description" content={title} />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="keywords"
+                    content={bio?.name + ", Portfolio"}
+                ></meta>
+                <meta name="author" content={bio?.name}></meta>
+                <link rel="icon" type="image/png" href="/titleicon.png"/>
             </Head>
             <section>
                 <HeroComponent bio={bio!} />

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Projects } from "Render/Project/RenderProject";
 import unpackIcons from "utilities/icons";
+import BeautifyParagraph from "utilities/splitLines";
 
 export interface ProjectProps {
     proj: Projects[];
@@ -16,62 +17,54 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
     const FilterProject = () => {
         return (
             <ul tabIndex={0} className="h-96 overflow-x-auto">
-                <li
-                    key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
-                >
-                    <a
+                <li key="clear">
+                    <button
                         onClick={() => {
                             setFilter("");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Clear
-                    </a>
+                    </button>
                 </li>
-                <li
-                    key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
-                >
-                    <a
+                <li key="clear">
+                    <button
                         onClick={() => {
                             setFilter("current");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Current
-                    </a>
+                    </button>
                 </li>
-                <li
-                    key="clear"
-                    className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
-                >
-                    <a
+                <li key="clear">
+                    <button
                         onClick={() => {
                             setFilter("featured");
                             setPage(1);
                             setViewSkills(false);
                         }}
+                        className="btn btn-ghost text-center text-justify rounded-md w-52"
                     >
                         Featured
-                    </a>
+                    </button>
                 </li>
                 {skills.map((skill) => (
-                    <li
-                        key={skill}
-                        className="cursor-pointer block p-2 hover:bg-gray-200 rounded-md w-52"
-                    >
-                        <a
+                    <li key={skill}>
+                        <button
                             onClick={() => {
                                 setFilter(skill);
                                 setPage(1);
                                 setViewSkills(false);
                             }}
+                            className="btn btn-ghost text-center text-justify rounded-md w-52"
                         >
                             {skill}
-                        </a>
+                        </button>
                     </li>
                 ))}
             </ul>
@@ -162,7 +155,10 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                                         {e.name}
                                                     </span>
                                                     <p className="py-4">
-                                                        {e.story}
+                                                        {BeautifyParagraph(
+                                                            e.type!,
+                                                            e.story!
+                                                        )}
                                                     </p>
                                                     {e.links ? (
                                                         <span className="font-bold">

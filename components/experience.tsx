@@ -1,5 +1,6 @@
 import { Experience } from "Render/Experience/RenderExperience";
 import unpackIcons from "utilities/icons";
+import BeautifyParagraph from "utilities/splitLines";
 
 export interface ExperienceProps {
     exp: Experience[];
@@ -20,18 +21,18 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                         <label htmlFor={`exp-modal-${index}`}>
                             <div className="card w-96 bg-base-100 shadow-xl">
                                 <div className="card-body">
-                                    <h2 className="card-title">
+                                    <h2 className="card-title text-left my-2">
                                         {experience.title} @{" "}
                                         {experience.orgName}
-                                        {experience.current ? (
-                                            <div className="badge badge-accent mx-2">
-                                                Current
-                                            </div>
-                                        ) : null}
-                                        <span className="justify-right text-base not-italic font-medium">
-                                            {experience.dateStartEnd}
-                                        </span>
                                     </h2>
+                                    {experience.current ? (
+                                        <div className="badge badge-accent my-2">
+                                            Current
+                                        </div>
+                                    ) : null}
+                                    <span className="text-left text-base not-italic font-medium my-2">
+                                        {experience.dateStartEnd}
+                                    </span>
                                     <p className="text-justify text-base not-italic font-medium tracking-wide">
                                         {experience.summary}
                                     </p>
@@ -54,9 +55,12 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                             className="modal cursor-pointer"
                         >
                             <label className="modal-box relative" htmlFor="">
-                                <p className="py-4 text-base">
-                                    {experience.story}
-                                </p>
+                                <div className="py-4 text-base">
+                                    {BeautifyParagraph(
+                                        experience.type!,
+                                        experience.story!
+                                    )}
+                                </div>
                                 {experience.links && (
                                     <span
                                         className="gap-16 tooltip"
