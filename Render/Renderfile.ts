@@ -128,7 +128,7 @@ export const Render = [
         name: "Wine price predictor",
         summary: "Data science project to predict wine prices.",
         skills: ["python", "scikitlearn"],
-        story: "Utilized proper data cleaning and EDA steps \
+        story: "Utilized proper data cleaning and EDA steps. \
         Implementing statistical and ML models, such as regression, clustering, and classifying algorithms.",
         links: [
             "https://drive.google.com/drive/folders/1RH-IwkHzTDAXpuh65E9Fc20cm6zSXhTE?usp=sharing",
