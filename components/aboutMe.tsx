@@ -1,3 +1,4 @@
+import BeautifyParagraph from "utilities/splitLines";
 import { Bio } from "./../Render/Bio/RenderBio";
 
 export interface HeroProps {
@@ -16,9 +17,9 @@ export default function AboutMeComponent({ bio }: HeroProps) {
                         <h2 className="card-title p-2 font-bold text-xl font-serif">
                             About me
                         </h2>
-                        <p className=" p-2 text-justify leading-relaxed">
-                            {bio.aboutMe}
-                        </p>
+                        <div className=" p-2 text-justify leading-relaxed">
+                            {BeautifyParagraph(bio.type!, bio.aboutMe!)}
+                        </div>
                     </div>
                 </div>
             </div>
