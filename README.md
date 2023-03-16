@@ -78,6 +78,12 @@ You need to be especially careful about icons. **Icons are used in skills and li
 
 > At the time of writing this, not every combination of features have been tested. In other words, missing certain fields might cause UI damages, and should be reported [here](https://github.com/zacharyLYH/Next-Portfolio-Template/issues).
 
+### Lengthy paragraph splitting
+In the current implementation, long paragraphs are split by periods `.`, seperated into bullet points, and a colored circle will sit in place of the bullet point. Check out [the implementation](https://github.com/zacharyLYH/Next-Portfolio-Template/blob/main/utilities/splitLines.tsx). Currently, places affected by `BeautifyParagraph` are:
+- Bio aboutMe
+- Experience story
+- Project story
+
 ### Bio
 
 This is the shape of the `Bio` section, replace text values as appropriate.
@@ -104,11 +110,12 @@ docs: {
   transcript: "/transcript.pdf",
 }
 ```
-
+-   `aboutMe` is affected by [`BeautifyParagraph`](#lengthy-paragraph-splitting). 
 -   In general, don't make any one section too long. A section too long throws off the readability of your portfolio, and in the worst case might trigger some overflow bugs (feel free to fix any with a PR if it happens though).
     -   Feel free to have a lengthy `aboutMe`.
 -   Currently, the only emails supported use `gmail`. If any other emails are desired, you may implement it yourself or raise an [issue](https://github.com/zacharyLYH/Next-Portfolio-Template/issues).
 -   The `hobbies` section is not exactly just for hobbies. On the UI , we call that section `More fun facts`, because you're probably a very interesting person!
+-   Social links follow [icon rules](#icons)
 
 ### Experience
 
@@ -123,10 +130,11 @@ current: true,
 orgName: "Qwerty.ai",
 dateStartEnd: "1/1-2/1",
 ```
-
+-   `story` is affected by [`BeautifyParagraph`](#lengthy-paragraph-splitting). 
 -   Important: skills come with icons, so be careful about naming them and please make sure they exist in `iconsList.ts`.
 -   In general, use everything defined here, for any missing information might cause unexpected behavior.
 -   If this is not your `current` experience, feel free to omit that field.
+-   Skills and links follow [icon rules](#icons)
 
 ### Projects
 
@@ -141,11 +149,12 @@ current: true,
 featured: true,
 dateStartToEnd: "1/1 - 2/1",
 ```
-
+-   `story` is affected by [`BeautifyParagraph`](#lengthy-paragraph-splitting). 
 -   Any projects with unset `current` and or `featured` fields are set to `false` by default, ie. if you don't plan to set it, you may omit it.
 -   We understand that as engineers, you have a lot of cool projects that you've worked on. One of the strengths of this portfolio template is that you may add an unlimited (theoretically) number of projects, no impact on your UI!
     -   We use pagination, with a page having at most 6 cards.
     -   There is also a filter feature which will filter by the skills on the projects you provided.
+ -   Skills and links follow [icon rules](#icons)
 
 ### Footer
 
