@@ -35,7 +35,8 @@ On a high level, the program takes a JSON file with specific syntax, supplied by
 
 -   NextJS deployment
     -   [Vercel](https://vercel.com/solutions/nextjs?utm_source=google&utm_medium=cpc&utm_campaign=18576682555&utm_campaign_id=18576682555&utm_term=deploy%20nextjs&utm_content=141733725825_627677616427&gclid=EAIaIQobChMIn9fG29fg_QIVGzizAB2FIAYfEAAYASAAEgJK7PD_BwE)
--   JSON
+-   Working JSON knowledge
+-   NodeJS V16.8 and up 
 -   Optional: Typescript React, Tailwind CSS, DaisyUI if you desire to modify the template
 
 # Usage documentation
@@ -46,8 +47,11 @@ On a high level, a user with the aforementioned skill requisites should
 
 1. Fork the project
 2. Read the remainder of the documentation and understand the syntax and requirements that the parser uses
-3. Make changes where appropriate
-4. Host it for free on [Vercel](https://vercel.com/solutions/nextjs?utm_source=google&utm_medium=cpc&utm_campaign=18576682555&utm_campaign_id=18576682555&utm_term=deploy%20nextjs&utm_content=141733725825_627677616427&gclid=EAIaIQobChMIn9fG29fg_QIVGzizAB2FIAYfEAAYASAAEgJK7PD_BwE)
+3. `yarn install` or `npm i`
+4. Make changes where appropriate
+5. For testing, spin up a development environment using `yarn run dev` or `npm run dev`. Note, the `dev` environment comes with hot reloading built in.
+6. Before deploying, optionally run `npm run build`. This confirms that your build is possible, and makes the deploying step a breeze. 
+7. Host it for free on [Vercel](https://vercel.com/solutions/nextjs?utm_source=google&utm_medium=cpc&utm_campaign=18576682555&utm_campaign_id=18576682555&utm_term=deploy%20nextjs&utm_content=141733725825_627677616427&gclid=EAIaIQobChMIn9fG29fg_QIVGzizAB2FIAYfEAAYASAAEgJK7PD_BwE)
 
 ### Images, Icons, and documents
 
