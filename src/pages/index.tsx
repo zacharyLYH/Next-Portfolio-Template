@@ -97,9 +97,9 @@ export default function Home() {
             <section>
                 <ProjectComponent proj={project!} skills={skills} />
             </section>
-            {/* <section>
+            <section>
                 <CommendationComponent comm={commendations} />
-            </section> */}
+            </section>
             <section>
                 <FooterComponent foot={footer!} />
             </section>
