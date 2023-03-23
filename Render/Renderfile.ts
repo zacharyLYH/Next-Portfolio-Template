@@ -259,7 +259,6 @@ export const Render = [
         type: "Commendation", //SPELL THIS CORRECTLY
         name: "Placeholder IGNORE",
         compliment: "IGNORE",
-        image: "/user1.png",
         credentials: "web developer @ startup.ai",
         link: "https://johndoe.bio",
     },
