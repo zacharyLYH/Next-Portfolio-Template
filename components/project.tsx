@@ -154,12 +154,12 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
                                                     <span className="font-bold">
                                                         {e.name}
                                                     </span>
-                                                    <p className="py-4">
+                                                    <div className="py-4">
                                                         {BeautifyParagraph(
                                                             e.type!,
                                                             e.story!
                                                         )}
-                                                    </p>
+                                                    </div>
                                                     {e.links ? (
                                                         <span className="font-bold">
                                                             Check them out:

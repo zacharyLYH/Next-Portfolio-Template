@@ -8,7 +8,7 @@ interface SideBarProps {
 
 export default function SideBarComponent({ links }: SideBarProps) {
     return (
-        <div className="toast toast-start toast-middle mx-10">
+        <div className="invisible visible xl:visible 2xl:visible toast toast-start toast-middle mx-10 ">
             <div
                 className="bg-slate-200 rounded-xl ring-offset-2 ring-4 tooltip tooltip-right"
                 data-tip="Let's connect!"
