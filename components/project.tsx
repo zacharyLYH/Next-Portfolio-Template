@@ -91,7 +91,7 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
     return (
         <div className="flex flex-col items-center h-full">
             <span className="font-bold text-center text-5xl font-serif mb-10">
-                Projects
+                📌 Projects 📌
             </span>
             <button
                 onClick={() => setViewSkills(!viewSkills)}
