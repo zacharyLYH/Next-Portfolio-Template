@@ -1,5 +1,7 @@
 import Image from "next/image";
+import unpackIcons from "utilities/icons";
 import { Bio } from "./../Render/Bio/RenderBio";
+import Theme from "./theme";
 
 export interface HeroProps {
     bio: Bio;
@@ -49,6 +51,14 @@ export default function HeroComponent({ bio }: HeroProps) {
                     )}
                     <div className="badge badge-accent badge-md badge-outline ml-4">
                         {bio.jobStatus}
+                    </div>
+                    <div className="xl:invisible 2xl:invisible">
+                        <div className="flex inline gap-1">
+                            <Theme />
+                            {bio.socialLinks?.map((link) => (
+                                <span key={link} className="py-2">{unpackIcons(link)}</span>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

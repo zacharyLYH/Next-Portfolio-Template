@@ -28,6 +28,12 @@ A minimalistic portfolio template built using the [NextJS](https://nextjs.org/) 
     -   Skills involved in this experience
     -   Featured or not featured
 -   Social Links
+-   Commendations
+    -   Image of commender, or a blank image otherwise
+    -   Name of commender
+    -   The compliment
+    -   Commender's credentials in full
+    -   Social link (singular) to commender
 
 On a high level, the program takes a JSON file with specific syntax, supplied by the user. The software parses the file and renders it. Assuming no desire to modify the current implementation, a user only needs to understand JSON syntax and NextJS deployment strategies.
 
@@ -155,6 +161,18 @@ dateStartToEnd: "1/1 - 2/1",
     -   We use pagination, with a page having at most 6 cards.
     -   There is also a filter feature which will filter by the skills on the projects you provided.
  -   Skills and links follow [icon rules](#icons)
+
+### Commendation
+```
+type: "Commendation", //SPELL THIS CORRECTLY
+name: "Ex colleague John",
+compliment: "Best person I've ever worked with.",
+image: "/john.jpeg",
+credentials: "web developer @ startup.ai",
+link: "https://johndoe.bio"
+```
+- If no commendations are given, the section doesn't show. 
+- The link's icon need not be provided here unlike other instances; a default icon will be used here. You may change the icons associated if you choose, but be warned this involves understanding of how icons are implemented in other cases. 
 
 ### Footer
 

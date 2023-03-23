@@ -245,4 +245,53 @@ export const Render = [
         author: "Zachary Lee",
         links: ["https://github.com/zacharyLYH"],
     },
+    {
+        type: "Commendation", //SPELL THIS CORRECTLY
+        name: "Ex colleague John0",
+        compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        scalability and maintainability. \
+        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
+        Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
+        Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
+        Added new UI features that directly enhanced user experience. \
+        Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
+        // compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        // scalability and maintainability.",
+        // image: "/",
+        credentials: "web developer @ startup.ai",
+        link: "https://johndoe.bio",
+    },
+    {
+        type: "Commendation", //SPELL THIS CORRECTLY
+        name: "Ex colleague John1",
+        compliment: "Collaboratedsdf closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        scalability and maintainability. \
+        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
+        Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
+        Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
+        Added new UI features that directly enhanced user experience. \
+        Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
+        // compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        // scalability and maintainability.",
+        image: "/user1.png",
+        credentials: "web developer @ startup.ai",
+        link: "https://johndoe.bio",
+    },
+    {
+        type: "Commendation", //SPELL THIS CORRECTLY
+        name: "Ex colleague John2",
+        compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        scalability and maintainability.",
+        credentials: "web developer @ startup.ai",
+        link: "https://johndoe.bio",
+    },
+    {
+        type: "Commendation", //SPELL THIS CORRECTLY
+        name: "Ex colleague John3",
+        image: "/user1.png",
+        compliment: "Collaborated sdfclosely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
+        scalability and maintainability.",
+        credentials: "web developer @ startup.ai",
+        link: "https://johndoe.bio",
+    },
 ];
