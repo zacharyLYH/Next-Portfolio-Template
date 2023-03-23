@@ -34,7 +34,7 @@ export default function HeroComponent({ bio }: HeroProps) {
                             rel="noopener noreferrer"
                         >
                             <button className="btn btn-primary mr-2">
-                                Resume
+                                Resume 📝
                             </button>
                         </a>
                     )}
@@ -45,7 +45,7 @@ export default function HeroComponent({ bio }: HeroProps) {
                             rel="noopener noreferrer"
                         >
                             <button className="btn btn-primary mr-2">
-                                Transcript
+                                Transcript 📝
                             </button>
                         </a>
                     )}
