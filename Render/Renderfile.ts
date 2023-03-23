@@ -247,50 +247,19 @@ export const Render = [
     },
     {
         type: "Commendation", //SPELL THIS CORRECTLY
-        name: "Ex colleague John0",
-        compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        scalability and maintainability. \
-        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
-        Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
-        Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
-        Added new UI features that directly enhanced user experience. \
-        Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
-        // compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        // scalability and maintainability.",
-        // image: "/",
-        credentials: "web developer @ startup.ai",
-        link: "https://johndoe.bio",
+        name: "Anthony Mendez",
+        compliment:
+            "Analytical and time management guru. As we prepare for our technical interviews, Zachary shows his exemplary analytical skills by finding patterns to solve complex problems.\
+         Having worked on projects together he ships high quality code quickly. You won't go wrong with this choice.",
+        image: "/amendez.jpeg",
+        credentials: "Software Engineer @ CapitalOne",
+        link: "https://www.linkedin.com/in/anthony00/",
     },
     {
         type: "Commendation", //SPELL THIS CORRECTLY
-        name: "Ex colleague John1",
-        compliment: "Collaboratedsdf closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        scalability and maintainability. \
-        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
-        Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
-        Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
-        Added new UI features that directly enhanced user experience. \
-        Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
-        // compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        // scalability and maintainability.",
+        name: "Placeholder IGNORE",
+        compliment: "IGNORE",
         image: "/user1.png",
-        credentials: "web developer @ startup.ai",
-        link: "https://johndoe.bio",
-    },
-    {
-        type: "Commendation", //SPELL THIS CORRECTLY
-        name: "Ex colleague John2",
-        compliment: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        scalability and maintainability.",
-        credentials: "web developer @ startup.ai",
-        link: "https://johndoe.bio",
-    },
-    {
-        type: "Commendation", //SPELL THIS CORRECTLY
-        name: "Ex colleague John3",
-        image: "/user1.png",
-        compliment: "Collaborated sdfclosely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        scalability and maintainability.",
         credentials: "web developer @ startup.ai",
         link: "https://johndoe.bio",
     },
