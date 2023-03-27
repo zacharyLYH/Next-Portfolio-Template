@@ -257,9 +257,11 @@ export const Render = [
     },
     {
         type: "Commendation", //SPELL THIS CORRECTLY
-        name: "Placeholder IGNORE",
-        compliment: "IGNORE",
-        credentials: "web developer @ startup.ai",
-        link: "https://johndoe.bio",
+        name: "Will Hollingsworth",
+        compliment:
+            "I am delighted to recommend Zachary for any technical role. Zachary consistently demonstrated exceptional work ethic and technical expertise. Zachary is very thoughtful and knowledgeable in scalability and maintainability. From a managerial perspective, Zachary was a joy to work with. Zachary consistently exceeded expectations and demonstrated excellent communication skills, strategic thinking, and accountability. I have no doubt that Zachary will be an asset to any team.",
+        credentials: "COO @ Spawnn",
+        image: "/willhollingsworth.jpeg",
+        link: "https://www.linkedin.com/in/will-hollingsworth-01284316a/",
     },
 ];
