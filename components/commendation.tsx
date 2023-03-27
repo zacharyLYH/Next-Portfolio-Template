@@ -33,7 +33,14 @@ export default function CommendationComponent({ comm }: CommendationProps) {
                 🎉 Commendation 🎉
             </span>
             <div className="card lg:card-side shadow-xl w-4/5">
-                <figure style={{ maxWidth: "500px", maxHeight: "500px" }}>
+                <figure
+                    style={{
+                        maxWidth: "500px",
+                        maxHeight: "500px",
+                        minHeight: "500px",
+                        minWidth: "500px",
+                    }}
+                >
                     {slide.image ? (
                         <Image
                             src={slide.image}
@@ -105,6 +112,9 @@ export default function CommendationComponent({ comm }: CommendationProps) {
                     </div>
                 )}
             </div>
+            <span className="font-bold text-xl p-2">
+                {slideNum + 1}/{comm.length}
+            </span>
         </div>
     );
 }
