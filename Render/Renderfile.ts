@@ -25,7 +25,7 @@ export const Render = [
         ],
         jobStatus: "Interview Ready",
         docs: {
-            resume: "/resume.pdf",
+            resume: "/zachary_lee_resume.pdf",
             transcript: "/transcript.pdf",
         },
     },
