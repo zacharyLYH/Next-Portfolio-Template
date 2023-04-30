@@ -7,6 +7,9 @@ export interface ExperienceProps {
 }
 
 export default function ExperienceComponent({ exp }: ExperienceProps) {
+    function hasTitleAndOrgname(title: string, orgName: string): string {
+        return title + " @ " + orgName;
+    }
     return (
         <div className="flex flex-row h-full items-center justify-center lg:mx-96 md:mx-auto sm:mx-auto overflow-y-auto mt-16 mb-16">
             <h1 className="text-2xl font-bold font-serif text-center">
@@ -19,12 +22,20 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                         className="step step-warning italic text-xl font-bold px-4"
                     >
                         <label htmlFor={`exp-modal-${index}`}>
-                            <div className="card w-96 bg-base-100 shadow-xl">
+                            <div className="card bg-base-100 shadow-xl">
                                 <div className="card-body">
-                                    <h2 className="card-title text-left my-2">
-                                        {experience.title} @{" "}
-                                        {experience.orgName}
-                                    </h2>
+                                    {experience.orgName ? (
+                                        <h2 className="card-title text-left my-2">
+                                            {hasTitleAndOrgname(
+                                                experience.title!,
+                                                experience.orgName
+                                            )}
+                                        </h2>
+                                    ) : (
+                                        <h2 className="card-title text-left my-2">
+                                            {experience.title}
+                                        </h2>
+                                    )}
                                     {experience.current ? (
                                         <div className="badge badge-accent my-2">
                                             Current
@@ -45,34 +56,41 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                 </div>
                             </div>
                         </label>
-                        <input
-                            type="checkbox"
-                            id={`exp-modal-${index}`}
-                            className="modal-toggle"
-                        />
-                        <label
-                            htmlFor={`exp-modal-${index}`}
-                            className="modal cursor-pointer"
-                        >
-                            <label className="modal-box relative" htmlFor="">
-                                <div className="py-4 text-base">
-                                    {BeautifyParagraph(
-                                        experience.type!,
-                                        experience.story!
-                                    )}
-                                </div>
-                                {experience.links && (
-                                    <span
-                                        className="gap-16 tooltip"
-                                        data-tip="Related links"
+                        {experience.story && (
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    id={`exp-modal-${index}`}
+                                    className="modal-toggle"
+                                />
+                                <label
+                                    htmlFor={`exp-modal-${index}`}
+                                    className="modal cursor-pointer"
+                                >
+                                    <label
+                                        className="modal-box relative"
+                                        htmlFor=""
                                     >
-                                        {experience.links?.map((link) =>
-                                            unpackIcons(link)
+                                        <div className="py-4 text-base">
+                                            {BeautifyParagraph(
+                                                experience.type!,
+                                                experience.story!
+                                            )}
+                                        </div>
+                                        {experience.links && (
+                                            <span
+                                                className="gap-16 tooltip"
+                                                data-tip="Related links"
+                                            >
+                                                {experience.links?.map((link) =>
+                                                    unpackIcons(link)
+                                                )}
+                                            </span>
                                         )}
-                                    </span>
-                                )}
-                            </label>
-                        </label>
+                                    </label>
+                                </label>
+                            </div>
+                        )}
                     </li>
                 ))}
             </ul>

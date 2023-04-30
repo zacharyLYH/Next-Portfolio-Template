@@ -43,13 +43,14 @@ export const Render = [
             "tailwindcss",
             "typescript",
         ],
-        story: "Collaborated closely with the CEO to design more than 80% (18+ components) of the Backend architecture, focusing on \
-        scalability and maintainability. \
-        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%. \
-        Supervised integration of approved API endpoints with the frontend team and troubleshooted blockers by developers. \
-        Implemented more than 50% backend code and was responsible for code reviewing for colleagues before merging to main. \
-        Added new UI features that directly enhanced user experience. \
-        Played a key role in bringing the company to Beta testing stages and highly recognized for that impact and effort.",
+        story: " Collaborated closely with the CEO to establish more than 80% (18+ components) of the Backend architecture, \
+        concentrating on scalability and maintainability.\
+        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%.\
+        Supervised integration of 20 approved API endpoints with Frontend team and troubleshooted blockers by developers. \
+        Coded more than 50% Backend code and facilitated 50+ code reviews in an Agile environment. Transitioned to Full Stack\
+        in 2 weeks and coded 10+ Frontend features using Next.JS and Typescript, contributing to 15% of Front-End codebase.\
+        Spearheaded company into delivering an Alpha release stage in 4 months, releasing to over 20+ professional collegiate \
+        gaming organizations; highly recognized for impact and effort in development and leadership.",
         current: true,
         orgName: "Spawnn",
         dateStartEnd: "09/2022 - Ongoing",
@@ -60,9 +61,9 @@ export const Render = [
         summary: "Teaching assistant for a junior year algorithms course.",
         skills: ["tutor", "algorithms", "python"],
         current: true,
-        story: "Conducted office hours and graded for a Junior level Algorithms and Complexity analysis course (UB’s CSE331).\
-        Assisted students in understanding abstract algorithmic concepts through technical communication and worked examples.\
-        Further honed technical communication skills through explaining difficult concepts.",
+        story: " Conducted office hours and grading for a Junior year Algorithms and Complexity analysis course, involving 300 students.\
+        Coached students in understanding abstract algorithmic concepts, including divide and conquer, graph, dynamic \
+        programming, and stable matching algorithms.",
         orgName: "UB",
         dateStartEnd: "09/2022 - Ongoing",
     },
@@ -76,6 +77,13 @@ export const Render = [
         Learnt what it meant to develop a game engine and practiced Python3, Object-Oriented Paradigm programming, and GitHub skills.",
         links: ["https://github.com/makeopensource/Classic-RPG"],
         orgName: "MOS",
+    },
+    {
+        type: "Experience",
+        title: "AWS Certified Developer Associate",
+        summary: "Ongoing process. Estimate time of acquisition is August/September 2023.",
+        skills: ["aws"],
+        current: true,
     },
     {
         type: "Experience",
@@ -105,6 +113,21 @@ export const Render = [
         Followed front-end web development best practices. ",
         links: ["https://github.com/zacharyLYH/Next-Portfolio-Template"],
         current: true,
+        featured: true,
+    },
+    {
+        type: "Project",
+        name: "Folder Manager Toolkit",
+        summary:
+            "A basic Bash script that organizes folders based on filetypes and removes cruft. ",
+        skills: [
+            "bash",
+        ],
+        story: "A personal capstone project on learning Bash. \
+        A toolkit wraps two individual script that does file reorganization and cruft removal respectively. \
+        Cruft remover takes a user supplied last modified time and removes any file that hasn't been modified for more than the user defined time. \
+        Folder organizer organizes files into folders based on their file extensions. ",
+        links: ["https://github.com/zacharyLYH/folder-manager-toolkit"],
         featured: true,
     },
     {
