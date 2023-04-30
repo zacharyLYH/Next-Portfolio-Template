@@ -83,9 +83,24 @@ export default function ProjectComponent({ proj, skills }: ProjectProps) {
             }
         }
         setNumProjects(filtered.length);
-        for (var i = (page - 1) * 6; i < page * 6; i++) {
-            newProj.push(filtered[i]);
-        }
+        filtered.sort((a, b) => {
+            if (a.current && a.featured) {
+                return -1;
+            }
+            if (b.current && b.featured) {
+                return 1;
+            }
+            if (a.current || a.featured) {
+                return -1;
+            }
+            if (b.current || b.featured) {
+                return 1;
+            }
+            return 0;
+        });
+        const startIndex = (page - 1) * 6;
+        const endIndex = startIndex + 6;
+        newProj.push(...filtered.slice(startIndex, endIndex));
         setRenderProjects(newProj);
     }, [page, filter]);
     return (
