@@ -29,5 +29,7 @@ export const IconsList = [
     "scikitlearn",
     "algorithms",
     "electronjs",
-    "scala"
+    "scala",
+    "aws",
+    "bash"
 ];
