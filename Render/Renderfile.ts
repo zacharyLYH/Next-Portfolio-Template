@@ -52,7 +52,7 @@ export const Render = [
         Spearheaded company into delivering an Alpha release stage in 4 months, releasing to over 20+ professional collegiate \
         gaming organizations; highly recognized for impact and effort in development and leadership.",
         orgName: "Spawnn",
-        dateStartEnd: "09/2022 - Ongoing",
+        dateStartEnd: "09/2022 - 05/2023",
     },
     {
         type: "Experience",
@@ -63,7 +63,7 @@ export const Render = [
         Coached students in understanding abstract algorithmic concepts, including divide and conquer, graph, dynamic \
         programming, and stable matching algorithms.",
         orgName: "UB",
-        dateStartEnd: "09/2022 - Ongoing",
+        dateStartEnd: "09/2022 - 05/2023",
     },
     {
         type: "Experience",
