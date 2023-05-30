@@ -12,6 +12,7 @@ import {
     Commendation,
     ConvertCommendation,
 } from "Render/Commendation/RenderCommendation";
+import { Stats, ConvertStats } from "Render/Stats/StatsCommendation";
 import HeroComponent from "components/hero";
 import AboutMeComponent from "components/aboutMe";
 import ProjectComponent from "components/project";
@@ -19,6 +20,7 @@ import ExperienceComponent from "components/experience";
 import FooterComponent from "components/footer";
 import SideBarComponent from "components/sidebar";
 import CommendationComponent from "components/commendation";
+import StatsComponent from "components/stats";
 
 export default function Home() {
     const [bio, setBio] = useState<Bio | null>(null);
@@ -27,6 +29,7 @@ export default function Home() {
     const [project, setProject] = useState<Projects[]>([]);
     const [footer, setFooter] = useState<Footer | null>(null);
     const [commendations, setCommendations] = useState<Commendation[]>([]);
+    const [stats, setStats] = useState<Stats[]>([]);
     const skillSet = new Set<string>([]);
     const readRenderfile = () => {
         for (const docs of Render) {
@@ -59,6 +62,12 @@ export default function Home() {
             if (docs.type === "Footer") {
                 setFooter(ConvertFooter.toFooter(JSON.stringify(docs)));
             }
+            if (docs.type === "Stats") {
+                setStats((prevStats) => [
+                    ...prevStats,
+                    ConvertStats.toStats(JSON.stringify(docs)),
+                ]);
+            }
         }
     };
     if (bio === null) {
@@ -88,6 +97,11 @@ export default function Home() {
             <section>
                 <SideBarComponent links={bio!} />
             </section>
+            {stats.length > 0 && (
+                <section>
+                    <StatsComponent stats={stats!} />
+                </section>
+            )}
             <section>
                 <AboutMeComponent bio={bio!} />
             </section>
