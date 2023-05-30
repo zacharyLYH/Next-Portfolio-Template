@@ -9,7 +9,7 @@ export const Render = [
             "leeyihong03@gmail.com",
             "https://leetcode.com/zacharylyh/",
         ],
-        tldr: "💻SWE @ Spawnn 📚CS @ UB'23 ✅Self-starting; Nimble; Curious",
+        tldr: "💻Ex SWE @ Spawnn 📚CS @ UB'23 ✅Self-starting; Nimble; Curious",
         aboutMe:
             "I am a soon-to-be fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have close to 9 months of professional Software Engineering experience. \
          I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. \
