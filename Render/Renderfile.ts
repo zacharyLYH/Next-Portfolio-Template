@@ -51,7 +51,6 @@ export const Render = [
         in 2 weeks and coded 10+ Frontend features using Next.JS and Typescript, contributing to 15% of Front-End codebase.\
         Spearheaded company into delivering an Alpha release stage in 4 months, releasing to over 20+ professional collegiate \
         gaming organizations; highly recognized for impact and effort in development and leadership.",
-        current: true,
         orgName: "Spawnn",
         dateStartEnd: "09/2022 - Ongoing",
     },
@@ -60,7 +59,6 @@ export const Render = [
         title: "Algorithms and Complexity teaching assistant",
         summary: "Teaching assistant for a junior year algorithms course.",
         skills: ["tutor", "algorithms", "python"],
-        current: true,
         story: " Conducted office hours and grading for a Junior year Algorithms and Complexity analysis course, involving 300 students.\
         Coached students in understanding abstract algorithmic concepts, including divide and conquer, graph, dynamic \
         programming, and stable matching algorithms.",
@@ -81,7 +79,8 @@ export const Render = [
     {
         type: "Experience",
         title: "AWS Certified Developer Associate",
-        summary: "Ongoing process. Estimate time of acquisition is August/September 2023.",
+        summary:
+            "Ongoing process. Estimate time of acquisition is August/September 2023.",
         skills: ["aws"],
         current: true,
     },
@@ -93,6 +92,28 @@ export const Render = [
         story: "Tutored in UB's CSE115, CSE116 and CSE220. Freshmen and Sophomore year mandatory CS courses. Intro to CS1, Intro to CS2, and Systems Programming respectively.\
         Developed technical communication skills and reinforced knowledge about systems, and object-oriented programming.",
         orgName: "UB",
+    },
+    {
+        type: "Project",
+        name: "Design Patterns in TypeScript",
+        summary:
+            "Practical projects demonstrating various design patterns, written in TypeScript..",
+        skills: ["typescript", "education"],
+        story: "A learning haven for Object Oriented Design Patterns in Typescript. Follows the book Head First Design Patterns with code examples from the code demonstrated in Typescript. Contains at least 1 fresh idea for every design pattern covered in the book. Including an auctioning system for the Observer Pattern and an implementation of a Text Editor Settings tab using the Strategy Pattern. ",
+        links: ["https://github.com/zacharyLYH/design-patterns-in-typescript"],
+        current: true,
+        featured: true,
+    },
+    {
+        type: "Project",
+        name: "NoSequel-Database",
+        summary:
+            "An implementation of a NoSequel Document Store Database, modelled after MongoDB.",
+        skills: ["golang", "docker"],
+        story: "A personal project to replicate NoSQL databases, such as MongoDB. Backend APIs for administrative and CRUD endpoints achieve a 150-ms average latency. ",
+        links: ["https://github.com/zacharyLYH/NoSequel-Database"],
+        current: true,
+        featured: true,
     },
     {
         type: "Project",
@@ -120,9 +141,7 @@ export const Render = [
         name: "Folder Manager Toolkit",
         summary:
             "A basic Bash script that organizes folders based on filetypes and removes cruft. ",
-        skills: [
-            "bash",
-        ],
+        skills: ["bash"],
         story: "A personal capstone project on learning Bash. \
         A toolkit wraps two individual script that does file reorganization and cruft removal respectively. \
         Cruft remover takes a user supplied last modified time and removes any file that hasn't been modified for more than the user defined time. \
@@ -157,7 +176,6 @@ export const Render = [
             "https://drive.google.com/drive/folders/1RH-IwkHzTDAXpuh65E9Fc20cm6zSXhTE?usp=sharing",
         ],
         featured: true,
-        current: true,
     },
     {
         type: "Project",
@@ -168,7 +186,6 @@ export const Render = [
         Utilized traversal algorithms and optimized data structures, along with modularized p5 functionality.\
         Focused on OOP practices, ease of maintenance, and scalability.",
         links: ["https://github.com/zacharyLYH/FSVisualizer"],
-        featured: true,
     },
     {
         type: "Project",
@@ -179,7 +196,6 @@ export const Render = [
         Conceived, architected, and built the Backend from scratch, prioritizing a robust database and codebase design.\
         Focused on code modularization, readability, and scalability.",
         links: ["https://github.com/zacharyLYH/ProjectFines"],
-        featured: true,
     },
     {
         type: "Project",
@@ -199,7 +215,6 @@ export const Render = [
         story: "A group based coursework project to build the Obsidian clone in a final year Software Engineering course. \
         Practicing core software engineering best practices, such as version control.",
         featured: true,
-        current: true,
     },
     {
         type: "Project",
@@ -286,5 +301,24 @@ export const Render = [
         credentials: "COO @ Spawnn",
         image: "/willhollingsworth.jpeg",
         link: "https://www.linkedin.com/in/will-hollingsworth-01284316a/",
+    },
+    {
+        type: "Stats",
+        title: "BSc Computer Science",
+        value: "University at Buffalo",
+        description: "3.7 / 4.0 GPA, Graduated May 2023",
+    },
+    {
+        type: "Stats",
+        title: "Projects Founded",
+        value: "8",
+        description: "Portfolio Template, NoSequel DB, Design Patterns, etc..",
+    },
+    {
+        type: "Stats",
+        title: "Years of Professional Experience",
+        value: "<1 years",
+        description:
+            "9 months as a founding Full Stack Engineer at a seed stage startup.",
     },
 ];
