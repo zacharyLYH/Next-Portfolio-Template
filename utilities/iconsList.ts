@@ -31,5 +31,6 @@ export const IconsList = [
     "electronjs",
     "scala",
     "aws",
-    "bash"
+    "bash",
+    "docker",
 ];
