@@ -9,15 +9,15 @@ export const Render = [
             "leeyihong03@gmail.com",
             "https://leetcode.com/zacharylyh/",
         ],
-        tldr: "💻Ex SWE @ Spawnn 📚CS @ UB'23 ✅Self-starting; Nimble; Curious",
+        tldr: "💻Ex SWE @ Spawnn; Ex Algorithms TA @ UB; 📚CS @ UB'23; ✅Self-starting; Nimble; Curious",
         aboutMe:
-            "I am a soon-to-be fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have close to 9 months of professional Software Engineering experience. \
+            "I am a fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have 9 months of professional Software Engineering experience. \
          I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. \
          I am extremely passionate about learning; I believe learning is what makes a good life a great life, and what separates the best among the big talent pool. \
          I work hard; I usually have no problem being the first person to start a day’s work, and the last person to end the day, however, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
         image: "/headshot.jpeg",
         hobbies: [
-            "Prefer Golang! ",
+            "Golang, TypeScript, Python ",
             "I love playing and watching CSGO 🔫",
             "I love to cook 👨‍🍳",
             "I am an avid reader. The genres I read are mostly on science, theory, and computer science 🔖",
