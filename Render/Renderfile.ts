@@ -84,7 +84,7 @@ export const Render = [
         summary:
             "Full Stack medical appointment portal, including features for making, updating, and deleting appointments, creating a medical profile, and making payments for services.",
         skills: ["typescript", "nextjs", "tailwindcss", "prisma"],
-        story: "Consists of 3 entities - Patient, Appointment, Medical_History - handled via Prisma ORM and hosted on PlanetScale DB. Uses feature rich Shadcn.UI as a component library to provide responsive and robust UI components such as Tables and Forms.",
+        story: "Consists of 3 entities - Patient, Appointment, Medical_History - handled via Prisma ORM and hosted on PlanetScale DB. Uses feature rich Shadcn.UI as a component library to provide responsive and robust UI components such as Tables and Forms. Attained a 93% average score for performance and SEO on Google Lighthouse.",
         links: ["https://github.com/zacharyLYH/doctors-appoinment"],
         current: true,
         featured: true,
