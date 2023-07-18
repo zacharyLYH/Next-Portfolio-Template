@@ -11,10 +11,7 @@ export const Render = [
         ],
         tldr: "💻Ex SWE @ Spawnn; Ex Algorithms TA @ UB; 📚CS @ UB'23; ✅Self-starting; Nimble; Curious",
         aboutMe:
-            "I am a fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have 9 months of professional Software Engineering experience. \
-         I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. \
-         I am extremely passionate about learning; I believe learning is what makes a good life a great life, and what separates the best among the big talent pool. \
-         I work hard; I usually have no problem being the first person to start a day’s work, and the last person to end the day, however, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
+            "I am a fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have 9 months of professional Software Engineering experience. I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. I am extremely passionate about learning; I believe learning is what makes a good life a great life, and what separates the best among the big talent pool.  I work hard; I usually have no problem being the first person to start a day’s work, and the last person to end the day, however, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
         image: "/headshot.jpeg",
         hobbies: [
             "Golang, TypeScript, Python ",
@@ -43,14 +40,7 @@ export const Render = [
             "tailwindcss",
             "typescript",
         ],
-        story: " Collaborated closely with the CEO to establish more than 80% (18+ components) of the Backend architecture, \
-        concentrating on scalability and maintainability.\
-        Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%.\
-        Supervised integration of 20 approved API endpoints with Frontend team and troubleshooted blockers by developers. \
-        Coded more than 50% Backend code and facilitated 50+ code reviews in an Agile environment. Transitioned to Full Stack\
-        in 2 weeks and coded 10+ Frontend features using Next.JS and Typescript, contributing to 15% of Front-End codebase.\
-        Spearheaded company into delivering an Alpha release stage in 4 months, releasing to over 20+ professional collegiate \
-        gaming organizations; highly recognized for impact and effort in development and leadership.",
+        story: " Collaborated closely with the CEO to establish more than 80% (18+ components) of the Backend architecture, concentrating on scalability and maintainability.Led development of an automated test tool, using JS testing frameworks and Python scripting, cutting testing time by 50%.Supervised integration of 20 approved API endpoints with Frontend team and troubleshooted blockers by developers. Coded more than 50% Backend code and facilitated 50+ code reviews in an Agile environment. Transitioned to Full Stack in 2 weeks and coded 10+ Frontend features using Next.JS and Typescript, contributing to 15% of Front-End codebase.Spearheaded company into delivering an Alpha release stage in 4 months, releasing to over 20+ professional collegiate gaming organizations; highly recognized for impact and effort in development and leadership.",
         orgName: "Spawnn",
         dateStartEnd: "09/2022 - 05/2023",
     },
@@ -59,9 +49,7 @@ export const Render = [
         title: "Algorithms and Complexity teaching assistant",
         summary: "Teaching assistant for a junior year algorithms course.",
         skills: ["tutor", "algorithms", "python"],
-        story: " Conducted office hours and grading for a Junior year Algorithms and Complexity analysis course, involving 300 students.\
-        Coached students in understanding abstract algorithmic concepts, including divide and conquer, graph, dynamic \
-        programming, and stable matching algorithms.",
+        story: " Conducted office hours and grading for a Junior year Algorithms and Complexity analysis course, involving 300 students. Coached students in understanding abstract algorithmic concepts, including divide and conquer, graph, dynamic programming, and stable matching algorithms.",
         orgName: "UB",
         dateStartEnd: "09/2022 - 05/2023",
     },
@@ -70,9 +58,7 @@ export const Render = [
         title: "Open source contributor",
         summary: "Contributed to an open source game engine",
         skills: ["python"],
-        story: "Contributed new features and addressed issues at UB’s open-source club’s Python based Classic-RPG style game engine.\
-        Contributed core features such as Potions, and many classes such as Health and Speed.\
-        Learnt what it meant to develop a game engine and practiced Python3, Object-Oriented Paradigm programming, and GitHub skills.",
+        story: "Contributed new features and addressed issues at UB’s open-source club’s Python based Classic-RPG style game engine. Contributed core features such as Potions, and many classes such as Health and Speed.Learnt what it meant to develop a game engine and practiced Python3, Object-Oriented Paradigm programming, and GitHub skills.",
         links: ["https://github.com/makeopensource/Classic-RPG"],
         orgName: "MOS",
     },
@@ -89,9 +75,33 @@ export const Render = [
         title: "CS tutor",
         summary: "Tutored 3 entry-level CS courses.",
         skills: ["python", "tutor"],
-        story: "Tutored in UB's CSE115, CSE116 and CSE220. Freshmen and Sophomore year mandatory CS courses. Intro to CS1, Intro to CS2, and Systems Programming respectively.\
-        Developed technical communication skills and reinforced knowledge about systems, and object-oriented programming.",
+        story: "Tutored in UB's CSE115, CSE116 and CSE220. Freshmen and Sophomore year mandatory CS courses. Intro to CS1, Intro to CS2, and Systems Programming respectively. Developed technical communication skills and reinforced knowledge about systems, and object-oriented programming.",
         orgName: "UB",
+    },
+    {
+        type: "Project",
+        name: "Drs-Appointment",
+        summary:
+            "Full Stack medical appointment portal, including features for making, updating, and deleting appointments, creating a medical profile, and making payments for services.",
+        skills: ["typescript", "nextjs", "tailwindcss", "prisma"],
+        story: "Consists of 3 entities - Patient, Appointment, Medical_History - handled via Prisma ORM and hosted on PlanetScale DB. Uses feature rich Shadcn.UI as a component library to provide responsive and robust UI components such as Tables and Forms.",
+        links: ["https://github.com/zacharyLYH/doctors-appoinment"],
+        current: true,
+        featured: true,
+    },
+    {
+        type: "Project",
+        name: "E-Commerce CMS",
+        summary:
+            "Full Stack CMS including an admin system and a client frontend. Designed to be responsive first and feature rich.",
+        skills: ["typescript", "nextjs", "tailwindcss", "prisma"],
+        story: "E-Commerce Admin side CMS includes features like Products and it's various features, and switching stores. E-Commerce Admin uses Clerk Auth service as authentication service, and Shadcn.UI as a component library. Client side CMS includes rich UI for viewing, ordering, and purchasing products. Stripe API integration as a payment system, Prisma as ORM, and PlanetScale as DB.",
+        links: [
+            "https://github.com/zacharyLYH/cms-admin",
+            "https://github.com/zacharyLYH/cms-store",
+        ],
+        current: false,
+        featured: true,
     },
     {
         type: "Project",
@@ -101,7 +111,7 @@ export const Render = [
         skills: ["typescript", "education"],
         story: "A learning haven for Object Oriented Design Patterns in Typescript. Follows the book Head First Design Patterns with code examples from the code demonstrated in Typescript. Contains at least 1 fresh idea for every design pattern covered in the book. Including an auctioning system for the Observer Pattern and an implementation of a Text Editor Settings tab using the Strategy Pattern. ",
         links: ["https://github.com/zacharyLYH/design-patterns-in-typescript"],
-        current: true,
+        current: false,
         featured: true,
     },
     {
@@ -112,7 +122,7 @@ export const Render = [
         skills: ["golang", "docker"],
         story: "A personal project to replicate NoSQL databases, such as MongoDB. Backend APIs for administrative and CRUD endpoints achieve a 150-ms average latency. ",
         links: ["https://github.com/zacharyLYH/NoSequel-Database"],
-        current: true,
+        current: false,
         featured: true,
     },
     {
@@ -133,7 +143,7 @@ export const Render = [
         Designed for the shallowest learning curve to implement and adapt. \
         Followed front-end web development best practices. ",
         links: ["https://github.com/zacharyLYH/Next-Portfolio-Template"],
-        current: true,
+        current: false,
         featured: true,
     },
     {
@@ -147,7 +157,7 @@ export const Render = [
         Cruft remover takes a user supplied last modified time and removes any file that hasn't been modified for more than the user defined time. \
         Folder organizer organizes files into folders based on their file extensions. ",
         links: ["https://github.com/zacharyLYH/folder-manager-toolkit"],
-        featured: true,
+        featured: false,
     },
     {
         type: "Project",
@@ -175,7 +185,7 @@ export const Render = [
         links: [
             "https://drive.google.com/drive/folders/1RH-IwkHzTDAXpuh65E9Fc20cm6zSXhTE?usp=sharing",
         ],
-        featured: true,
+        featured: false,
     },
     {
         type: "Project",
