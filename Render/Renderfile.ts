@@ -11,7 +11,7 @@ export const Render = [
         ],
         tldr: "💻Ex SWE @ Spawnn; Ex Algorithms TA @ UB; 📚CS @ UB'23; ✅Self-starting; Nimble; Curious",
         aboutMe:
-            "I am a fresh grad with an undergraduate degree in BS Computer Science in May 2023 and would have 9 months of professional Software Engineering experience. I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. I am extremely passionate about learning; I believe learning is what makes a good life a great life, and what separates the best among the big talent pool.  I work hard; I usually have no problem being the first person to start a day’s work, and the last person to end the day, however, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
+            "I am a fresh grad with an undergraduate degree in BS Computer Science with 9 months of professional Software Engineering experience. I am a natural leader; I have played key roles and led many projects during my internship, and I also tend to gravitate towards leadership/managerial roles in school and personal projects because people see me as a knowledgeable software engineer, a compassionate leader, a dependable team-player, and a result-driven individual. I am extremely passionate about learning; I believe learning is what makes a good life a great life, and what separates the best among the big talent pool.  I work hard; I usually have no problem being the first person to start a day’s work, and the last person to end the day, however, that doesn’t mean I don’t work smart – I work hard, smartly – and that has been the secret to all my career success.",
         image: "/headshot.jpeg",
         hobbies: [
             "Golang, TypeScript, Python ",
@@ -80,6 +80,17 @@ export const Render = [
     },
     {
         type: "Project",
+        name: "Creds",
+        summary:
+            "Full Stack secrets manager, built to solve environment variables sharing in a secure, scalabe, and user friendly manner.",
+        skills: ["typescript", "nextjs", "tailwindcss", "prisma"],
+        story: "Engineered a user friendly and secure secrets manager, designed to reduce pain points of sharing secrets in software. Achieved an average 93% score on Google Lighthouse on performance, accessibility, and SEO. Onboarded 120+ users and managing 1000+ individual secrets.",
+        links: ["https://cred-nine.vercel.app/"],
+        featured: true,
+        current: true,
+    },
+    {
+        type: "Project",
         name: "Drs-Appointment",
         summary:
             "Full Stack medical appointment portal, including features for making, updating, and deleting appointments, creating a medical profile, and making payments for services.",
@@ -100,7 +111,6 @@ export const Render = [
             "https://github.com/zacharyLYH/cms-admin",
             "https://github.com/zacharyLYH/cms-store",
         ],
-        current: false,
         featured: true,
     },
     {
@@ -122,7 +132,6 @@ export const Render = [
         skills: ["golang", "docker"],
         story: "A personal project to replicate NoSQL databases, such as MongoDB. Backend APIs for administrative and CRUD endpoints achieve a 150-ms average latency. ",
         links: ["https://github.com/zacharyLYH/NoSequel-Database"],
-        current: false,
         featured: true,
     },
     {
@@ -143,8 +152,6 @@ export const Render = [
         Designed for the shallowest learning curve to implement and adapt. \
         Followed front-end web development best practices. ",
         links: ["https://github.com/zacharyLYH/Next-Portfolio-Template"],
-        current: false,
-        featured: true,
     },
     {
         type: "Project",
@@ -157,7 +164,6 @@ export const Render = [
         Cruft remover takes a user supplied last modified time and removes any file that hasn't been modified for more than the user defined time. \
         Folder organizer organizes files into folders based on their file extensions. ",
         links: ["https://github.com/zacharyLYH/folder-manager-toolkit"],
-        featured: false,
     },
     {
         type: "Project",
@@ -185,7 +191,6 @@ export const Render = [
         links: [
             "https://drive.google.com/drive/folders/1RH-IwkHzTDAXpuh65E9Fc20cm6zSXhTE?usp=sharing",
         ],
-        featured: false,
     },
     {
         type: "Project",
@@ -224,7 +229,6 @@ export const Render = [
         skills: ["typescript", "electronjs", "reactjs", "teamwork", "zenhub"],
         story: "A group based coursework project to build the Obsidian clone in a final year Software Engineering course. \
         Practicing core software engineering best practices, such as version control.",
-        featured: true,
     },
     {
         type: "Project",
@@ -321,8 +325,8 @@ export const Render = [
     {
         type: "Stats",
         title: "Projects Founded",
-        value: "8",
-        description: "Portfolio Template, NoSequel DB, Design Patterns, etc..",
+        value: "12",
+        description: "Creds, NoSequel DB, Design Patterns, etc..",
     },
     {
         type: "Stats",
