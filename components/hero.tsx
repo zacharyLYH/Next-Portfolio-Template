@@ -27,9 +27,9 @@ export default function HeroComponent({ bio }: HeroProps) {
                     </div>
                     <p className="text-3xl p-2 italic">{bio.title}</p>
                     <p className="py-6 text-xl p-2">{bio.tldr}</p>
-                    {bio.docs?.resume && (
+                    {bio.resume && (
                         <a
-                            href={bio.docs.resume}
+                            href={bio.resume}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -38,9 +38,9 @@ export default function HeroComponent({ bio }: HeroProps) {
                             </button>
                         </a>
                     )}
-                    {bio.docs?.transcript && (
+                    {bio.transcript && (
                         <a
-                            href={bio.docs.transcript}
+                            href={bio.transcript}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -56,7 +56,9 @@ export default function HeroComponent({ bio }: HeroProps) {
                         <div className="flex inline gap-1">
                             <Theme />
                             {bio.socialLinks?.map((link) => (
-                                <span key={link} className="py-2">{unpackIcons(link)}</span>
+                                <span key={link} className="py-2">
+                                    {unpackIcons(link)}
+                                </span>
                             ))}
                         </div>
                     </div>
