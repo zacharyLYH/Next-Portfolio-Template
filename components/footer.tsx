@@ -46,7 +46,7 @@ export default function FooterComponent(foot: FooterProps) {
                     Easily manage your Renderfile.json with the{" "}
                     <a
                         className="link"
-                        href="https://github.com/zacharyLYH/Next-Portfolio-Template"
+                        href="https://kind-coast-04497ce00.3.azurestaticapps.net"
                     >
                         NPT CMS
                     </a>
