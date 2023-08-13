@@ -1,6 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
-import { Render } from "Render/Renderfile";
+import { useEffect, useState } from "react";
 import { ConvertBio, Bio } from "./../../Render/Bio/RenderBio";
 import {
     ConvertExperience,
@@ -31,8 +30,16 @@ export default function Home() {
     const [commendations, setCommendations] = useState<Commendation[]>([]);
     const [stats, setStats] = useState<Stats[]>([]);
     const skillSet = new Set<string>([]);
-    const readRenderfile = () => {
-        for (const docs of Render) {
+    const [jsonData, setJsonData] = useState<any[]>([]);
+    useEffect(() => {
+        fetch("/Renderfile.json")
+            .then((response) => response.json())
+            .then((data) => setJsonData(data))
+            .catch((error) => console.error("Error fetching JSON:", error));
+    }, []);
+    useEffect(() => {
+        for (const docs of jsonData) {
+            console.log(docs);
             if (docs.type === "Bio") {
                 setBio(ConvertBio.toBio(JSON.stringify(docs)));
             }
@@ -69,54 +76,59 @@ export default function Home() {
                 ]);
             }
         }
-    };
-    if (bio === null) {
-        readRenderfile();
         setSkills(Array.from(skillSet));
-    }
+    }, [jsonData]);
     const title = `${bio!?.name + "'s Portfolio"}`;
     return (
         <>
-            <Head>
-                <title>{title}</title>
-                <meta name="description" content={title} />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta
-                    name="keywords"
-                    content={bio?.name + ", Portfolio"}
-                ></meta>
-                <meta name="author" content={bio?.name}></meta>
-                <link rel="icon" type="image/png" href="/titleicon.png" />
-            </Head>
-            <section>
-                <HeroComponent bio={bio!} />
-            </section>
-            <section>
-                <SideBarComponent links={bio!} />
-            </section>
-            {stats.length > 0 && (
-                <section>
-                    <StatsComponent stats={stats!} />
-                </section>
+            {bio !== null && (
+                <>
+                    <Head>
+                        <title>{title}</title>
+                        <meta name="description" content={title} />
+                        <meta
+                            name="viewport"
+                            content="width=device-width, initial-scale=1"
+                        />
+                        <meta
+                            name="keywords"
+                            content={bio?.name + ", Portfolio"}
+                        ></meta>
+                        <meta name="author" content={bio?.name}></meta>
+                        <link
+                            rel="icon"
+                            type="image/png"
+                            href="/titleicon.png"
+                        />
+                    </Head>
+                    <section>
+                        <HeroComponent bio={bio!} />
+                    </section>
+                    <section>
+                        <SideBarComponent links={bio!} />
+                    </section>
+                    {stats.length > 0 && (
+                        <section>
+                            <StatsComponent stats={stats!} />
+                        </section>
+                    )}
+                    <section>
+                        <AboutMeComponent bio={bio!} />
+                    </section>
+                    <section>
+                        <ExperienceComponent exp={exps!} />
+                    </section>
+                    <section>
+                        <ProjectComponent proj={project!} skills={skills} />
+                    </section>
+                    <section>
+                        <CommendationComponent comm={commendations} />
+                    </section>
+                    <section>
+                        <FooterComponent foot={footer!} />
+                    </section>{" "}
+                </>
             )}
-            <section>
-                <AboutMeComponent bio={bio!} />
-            </section>
-            <section>
-                <ExperienceComponent exp={exps!} />
-            </section>
-            <section>
-                <ProjectComponent proj={project!} skills={skills} />
-            </section>
-            <section>
-                <CommendationComponent comm={commendations} />
-            </section>
-            <section>
-                <FooterComponent foot={footer!} />
-            </section>
         </>
     );
 }
