@@ -42,6 +42,15 @@ export default function FooterComponent(foot: FooterProps) {
                     </a>
                     {/* Please leave awknowledgements in */}
                 </p>
+                <p>
+                    Easily manage your Renderfile.json with the{" "}
+                    <a
+                        className="link"
+                        href="https://github.com/zacharyLYH/Next-Portfolio-Template"
+                    >
+                        NPT CMS
+                    </a>
+                </p>
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">
