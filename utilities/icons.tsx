@@ -8,7 +8,9 @@ export default function unpackIcons(link: string) {
                 <a href={`mailto:${link}`} key={link} className="p-1">
                     {RetIcon("gmail")}
                 </a>
-            ) : link.includes(".com") ? (
+            ) : link.includes(".com") ||
+              link.includes(".app") ||
+              link.includes(".net") ? (
                 <a href={link} key={link} className="p-1">
                     {RetIcon(LinkToIcon(link))}
                 </a>
