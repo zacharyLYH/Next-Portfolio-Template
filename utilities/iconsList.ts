@@ -33,5 +33,6 @@ export const IconsList = [
     "aws",
     "bash",
     "docker",
-    "prisma"
+    "prisma",
+    "angular",
 ];
