@@ -31,14 +31,14 @@
     },
     {
         "title": "Projects Founded",
-        "value": "12",
+        "value": "32",
         "description": "Creds, NoSequel DB, Design Patterns, etc..",
         "type": "Stats"
     },
     {
         "title": "Years of Professional Experience",
-        "value": "<1 years",
-        "description": "9 months as a founding Full Stack Engineer at a seed stage startup.",
+        "value": "1 years",
+        "description": "As a founding Full Stack Engineer at a seed stage startup.",
         "type": "Stats"
     },
     {
@@ -339,6 +339,28 @@
         "featured": false,
         "skills": ["scala", "oop"],
         "links": [],
+        "type": "Project"
+    },
+    {
+        "name": "Next-Portfolio-Template CMS",
+        "current": false,
+        "featured": false,
+        "summary": "CMS system for the current portfolio template you're looking at.",
+        "story": "Built using Angular. Takes a Renderfile, processes it into a nice looking UI for editing, then on a submit transforms the file back to a Renderfile. Hosted on Azure Static Web Apps.",
+        "dateStartToEnd": null,
+        "skills": ["angular"],
+        "links": ["https://kind-coast-04497ce00.3.azurestaticapps.net/"],
+        "type": "Project"
+    },
+    {
+        "name": "point-of-sale",
+        "current": false,
+        "featured": false,
+        "summary": "Angular based point of sale UI",
+        "story": "Capstone project for learning Angular. Hosted on Azure Static Web Apps.",
+        "dateStartToEnd": null,
+        "skills": ["angular"],
+        "links": ["https://icy-flower-0eb12ff00.3.azurestaticapps.net/"],
         "type": "Project"
     },
     {
