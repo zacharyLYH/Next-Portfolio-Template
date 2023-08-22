@@ -38,7 +38,7 @@ export default function FooterComponent(foot: FooterProps) {
                     </a>{" "}
                     by{" "}
                     <a className="link" href="https://github.com/zacharyLYH">
-                        Zachary Lee
+                        Yi-Hong Lee
                     </a>
                     {/* Please leave awknowledgements in */}
                 </p>

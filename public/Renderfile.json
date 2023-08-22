@@ -1,6 +1,6 @@
 [
     {
-        "name": "Zachary Lee",
+        "name": "Yi-Hong Lee",
         "hobbies": [
             "Golang, TypeScript, Python ",
             "I love playing and watching CSGO 🔫",
@@ -10,7 +10,7 @@
         ],
         "socialLinks": [
             "https://github.com/zacharyLYH",
-            "https://www.linkedin.com/in/zacharyleeyh",
+            "https://www.linkedin.com/in/leeyihong03",
             "leeyihong03@gmail.com",
             "https://leetcode.com/zacharylyh/"
         ],
@@ -380,7 +380,7 @@
         "type": "Commendation"
     },
     {
-        "author": "Zachary Lee",
+        "author": "Yi-Hong Lee",
         "links": ["https://github.com/zacharyLYH"],
         "type": "Footer"
     }
