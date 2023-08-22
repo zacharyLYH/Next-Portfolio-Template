@@ -47,7 +47,7 @@ export default function ExperienceComponent({ exp }: ExperienceProps) {
                                     <p className="text-justify text-base not-italic font-medium tracking-wide">
                                         {experience.summary}
                                     </p>
-                                    <div className="flex justify-start gap-1 inline">
+                                    <div className="flex justify-start gap-1">
                                         {experience.skills?.map((skill) =>
                                             unpackIcons(skill)
                                         )}
